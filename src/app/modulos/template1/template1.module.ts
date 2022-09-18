@@ -10,6 +10,8 @@ import { DondeCuandoComponent } from './components/donde-cuando/donde-cuando.com
 import { DesscodeComponent } from './components/desscode/desscode.component';
 import { FotosComponent } from './components/fotos/fotos.component';
 import { PersonasComponent } from './components/personas/personas.component';
+import { ConfirmarAsistenciaComponent } from './components/confirmar-asistencia/confirmar-asistencia.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { PersonasComponent } from './components/personas/personas.component';
         DondeCuandoComponent,
         DesscodeComponent,
         FotosComponent,
-        PersonasComponent
+        PersonasComponent,
+        ConfirmarAsistenciaComponent,
+        ContactoComponent
   ],
   imports: [
     CommonModule,
