@@ -6,9 +6,16 @@ section{
   justify-content: start;
   align-items: center;
   padding-top: 3rem;
+  background-color: rgba(56, 52, 52, 0.918);
+  color: white;
   gap: 4rem;
   h2{
-    font-size: 3rem;
+    text-align: center;
+    font-family: 'Laila', sans-serif;
+    font-size: 2.95rem;
+    }
+  h5{
+    font-family: 'Poppins', sans-serif;
   }
 }
 .btnContainer{
@@ -24,12 +31,13 @@ section{
       font-size: large;
       cursor: pointer;
       color: white;
-      background-color: red;
+      background-color: rgb(169, 74, 182);
     }
     button:hover{
-      color: red;
-      background-color: white;
-      border: .2rem solid red;
+      color: rgb(169, 74, 182);
+      color: wheat;
+      background-color: rgb(169, 74, 182, 0.3);
+      border: .2rem solid rgb(169, 74, 182);
     }
 }
 
@@ -46,12 +54,13 @@ form{
     cursor: pointer;
     color: white;
     font-size: large;
-    background-color: red;
+    background-color: rgb(169, 74, 182);
   }
   button:hover{
-    color: red;
-    background-color: white;
-    border: .2rem solid red;
+    color: rgb(169, 74, 182);
+    background-color: rgb(169, 74, 182, 0.3);;
+    border: .2rem solid rgb(169, 74, 182);
+    color: wheat;
   }
 }
 @media (max-width: 768px) {

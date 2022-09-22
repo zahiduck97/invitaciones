@@ -8,7 +8,9 @@ section{
   padding-top: 3rem;
   gap: 4rem;
   h2{
-    font-size: 3rem;
+    text-align: center;
+    font-family: 'Laila', sans-serif;
+    font-size: 2.95rem;
   }
   div{
     display: flex;
@@ -22,6 +24,7 @@ section{
     }
     span{
       font-size: larger;
+      font-family: 'Poppins', sans-serif;
     }
   }
 }

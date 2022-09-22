@@ -17,8 +17,8 @@ section{
   }
   .texto1{
     text-align: center;
-    font-family: 'Rubik Mono One', sans-serif;
-    font-size: 1.7rem;
+    font-family: 'Laila', sans-serif;
+    font-size: 2.9rem;
   }
   .texto2{
     font-family: 'Luckiest Guy', sans-serif;
@@ -64,6 +64,13 @@ section{
   .div2{
     .texto5{
       font-size: 1rem;
+    }
+  }
+  section{
+    div{
+      .texto1{
+        font-size: 2.3rem;
+      }
     }
   }
 }

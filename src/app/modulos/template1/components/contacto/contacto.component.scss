@@ -8,7 +8,9 @@ section{
   padding-top: 3rem;
   gap: 4rem;
   h2{
-    font-size: 3rem;
+    text-align: center;
+    font-family: 'Laila', sans-serif;
+    font-size: 2.95rem;
   }
 }
 .btnContainer{
@@ -29,10 +31,10 @@ section{
       align-items: center;
       align-content: center;
       color: white;
-      background-color: red;
+      background-color: rgb(169, 74, 182);
     }
     button:hover{
-      background-color: rgba($color: #945151, $alpha: 1.0);
+      background-color: rgb(92, 37, 99);
     }
 }
 @media (max-width: 768px) {

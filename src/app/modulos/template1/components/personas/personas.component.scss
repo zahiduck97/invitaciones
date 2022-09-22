@@ -7,9 +7,12 @@ section {
   align-items: center;
   padding-top: 3rem;
   gap: 4rem;
-  background-color: orangered;
+  margin-bottom: 3rem;
+  // background-color: orangered;
   h2 {
-    font-size: 3rem;
+    text-align: center;
+    font-family: 'Laila', sans-serif;
+    font-size: 2.95rem;
   }
 
 }
@@ -26,18 +29,29 @@ section {
     width: 18rem;
     min-width: 2rem;
     max-width: 18rem;
-    height: 50%;
+    height: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    // background-color: red;
+      span{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+      }
+      .clarito{
+        font-weight: 100;
+      }
+      .shadow{
+        filter: drop-shadow(3px 2px 5.2px  rgba(50, 50, 0, 0.5));
+      }
       .imgContenedor{
-        background-color: blue;
-        clip-path: circle(39% at 50% 50%);
+        background-color: white;
+        box-shadow: 10px 10px 10px 10px black;
+        clip-path: circle(39% at 49.8% 50%);
         img{
           width: 100%;
-          clip-path: circle(37% at 50% 50%);
+          clip-path: circle(37.4% at 49.8% 50%);
         }
       }
 
@@ -50,5 +64,8 @@ section {
   }
   .personasContainer{
     flex-direction: column;
+    .persona{
+      height: 20rem;
+    }
   }
 }
