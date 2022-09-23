@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import * from "../../../../../assets"
 @Component({
   selector: 'app-reloj-fondo',
   templateUrl: './reloj-fondo.component.html',
