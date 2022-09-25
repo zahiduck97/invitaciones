@@ -12,6 +12,7 @@ import { FotosComponent } from './components/fotos/fotos.component';
 import { PersonasComponent } from './components/personas/personas.component';
 import { ConfirmarAsistenciaComponent } from './components/confirmar-asistencia/confirmar-asistencia.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { FotofinComponent } from './components/fotofin/fotofin.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ContactoComponent } from './components/contacto/contacto.component';
         FotosComponent,
         PersonasComponent,
         ConfirmarAsistenciaComponent,
-        ContactoComponent
+        ContactoComponent,
+        FotofinComponent
   ],
   imports: [
     CommonModule,

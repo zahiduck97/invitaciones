@@ -7,6 +7,7 @@ section {
   align-items: center;
   padding-top: 3rem;
   gap: 4rem;
+
   // background-color: blue;
 
   h2 {
@@ -18,14 +19,47 @@ section {
     width: 100%;
     max-height: 80vh;
     overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+
     img{
-      width: 100%;
+      width: 50%;
+      object-fit: contain;
+      transition: all 1s ease-in-out;
     }
+
+    .flechas{
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      color: rgba(0, 0, 0, 0.774);
+      font-size: xxx-large;
+      font-weight: bolder;
+      justify-content: space-between;
+      padding: 2rem;
+      span{
+        cursor: pointer;
+      }
+    }
+
   }
 }
+
 @media (max-width: 768px) {
   section {
     height: auto;
     text-align: center;
+    div{
+      .flechas{
+        top: 30%;
+      }
+      img{
+        width: 70%;
+        object-fit: cover;
+      }
+    }
   }
 }

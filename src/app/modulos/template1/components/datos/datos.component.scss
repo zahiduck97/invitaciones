@@ -1,19 +1,28 @@
 section{
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   div{
     width: 100%;
-    height: 45%;
-    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);;
+    height: 100%;
+//     background-color: #f0db9b;
+// background-image: linear-gradient(152deg, #f0db9b 0%, #b19bc1 100%);
+
+background: #fceabb;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    // background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    color: whitesmoke;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.729);
   }
   .texto1{
     text-align: center;

@@ -2,6 +2,11 @@
   <h2>Fotos</h2>
   <div>
 <!--    aqui va el slider-->
-    <img src="assets/puesta.jpg">
+    <img src="{{currentSrc}}">
+    <div class="flechas">
+
+      <span  (click)="atras()"> < </span>
+      <span (click)="delante()"> > </span>
+    </div>
   </div>
 </section>
