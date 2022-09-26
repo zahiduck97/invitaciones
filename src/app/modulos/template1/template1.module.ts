@@ -18,7 +18,7 @@ import { FotofinComponent } from './components/fotofin/fotofin.component';
 @NgModule({
   declarations: [
 
-  
+
     Misxv1Component,
         NavbarComponent,
         RelojFondoComponent,
