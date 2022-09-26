@@ -17,6 +17,34 @@ section{
   h5{
     font-family: 'Poppins', sans-serif;
   }
+  .cancelar{
+    width: 40%;
+    border: 5px;
+    border-radius: 1rem;
+    height: 2.45rem;
+    font-size: large;
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.659);
+    background-color: #cc210a
+  }
+  .confirmar{
+    width: 40%;
+    border: 5px;
+    border-radius: 1rem;
+    height: 2.45rem;
+    font-size: large;
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.659);
+    background-color: #0bc42a
+  }
+  .cancelar:hover{
+    background-color: #570f06;
+  }
+  .confirmar:hover{
+    background-color: #055813;
+  }
 }
 .btnContainer{
   width: 100%;
@@ -31,13 +59,14 @@ section{
       font-size: large;
       cursor: pointer;
       color: white;
-      background-color: rgb(169, 74, 182);
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.659);
+      background-color: #f8b500
     }
+
     button:hover{
-      color: rgb(169, 74, 182);
-      color: wheat;
-      background-color: rgb(169, 74, 182, 0.3);
-      border: .2rem solid rgb(169, 74, 182);
+      color:  #f8b500;
+      background-color: #fceabb;
+      border: .2rem solid #f8b500;
     }
 }
 
@@ -53,19 +82,28 @@ form{
     height: 2.45rem;
     cursor: pointer;
     color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.659);
     font-size: large;
-    background-color: rgb(169, 74, 182);
+    background-color:  #f8b500;
   }
   button:hover{
-    color: rgb(169, 74, 182);
-    background-color: rgb(169, 74, 182, 0.3);;
-    border: .2rem solid rgb(169, 74, 182);
-    color: wheat;
+    color:  #f8b500;
+    background-color: #fceabb;
+    border: .2rem solid  #f8b500;
   }
 }
 @media (max-width: 768px) {
   section {
     text-align: center;
+    h5{
+      width: 80%;
+    }
+    .cancelar{
+      height: 3.5rem;
+    }
+    .confirmar{
+      height: 3.5rem;
+    }
   }
 
 }

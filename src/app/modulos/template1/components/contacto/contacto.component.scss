@@ -31,10 +31,11 @@ section{
       align-items: center;
       align-content: center;
       color: white;
-      background-color: rgb(169, 74, 182);
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.529);
+      background-color: #f8b500;
     }
     button:hover{
-      background-color: rgb(92, 37, 99);
+      background-color: #775906;
     }
 }
 @media (max-width: 768px) {

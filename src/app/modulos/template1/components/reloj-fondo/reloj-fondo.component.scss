@@ -34,6 +34,9 @@ section{
       font-family: 'Poppins', sans-serif;
       font-size: 3rem;
     }
+    .detalle{
+      font-size: 3rem;
+    }
     span{
       font-size: 5rem;
       font-family: 'Luckiest Guy', cursive;
@@ -46,6 +49,8 @@ section{
   section {
     .reloj{
       width: 80%;
+      bottom: 0;
+      height: 26%;
       right:calc((100% - 80%) / 2 );
       .xv{
         font-size: 3rem;
@@ -55,6 +60,9 @@ section{
       }
       span{
         font-size: 2rem;
+      }
+      .detalle{
+        font-size: 1.1rem;
       }
     }
 

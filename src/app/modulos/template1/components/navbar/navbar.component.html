@@ -6,7 +6,21 @@
 
   <ul>
     <li> Inicio </li>
-    <li> Dónde & cuando </li>
+    <li> Datos </li>
+    <li> Lugar </li>
+    <li> Fotos </li>
+    <li> Personas </li>
+    <li> Asistencia </li>
+    <li> Contacto </li>
   </ul>
-  <span>&#9776;</span>
+  <span (click)="menu()">&#9776;</span>
+  <div [ngClass]="mostrarMenu ? 'menu' : 'menu2'" >
+    <span> Inicio </span>
+    <span> Datos </span>
+    <span> Lugar </span>
+    <span> Fotos </span>
+    <span> Personas </span>
+    <span> Asistencia </span>
+    <span> Contacto </span>
+  </div>
 </nav>
