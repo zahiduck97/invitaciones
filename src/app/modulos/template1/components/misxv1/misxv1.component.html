@@ -1,11 +1,14 @@
-<app-navbar></app-navbar>
-<app-reloj-fondo></app-reloj-fondo>
-<app-datos></app-datos>
-<app-donde-cuando></app-donde-cuando>
+<app-navbar (opcion)="opcion($event)"></app-navbar>
+
+<div #inicio><app-reloj-fondo></app-reloj-fondo></div>
+<div #datos><app-datos></app-datos></div>
+<div #lugar><app-donde-cuando></app-donde-cuando></div>
 <!-- <app-desscode></app-desscode> -->
-<app-fotos></app-fotos>
-<app-personas></app-personas>
-<app-confirmar-asistencia></app-confirmar-asistencia>
-<app-contacto></app-contacto>
+<div #fotos><app-fotos></app-fotos></div>
+<div #personas><app-personas></app-personas></div>
+<div #asistencia><app-confirmar-asistencia></app-confirmar-asistencia></div>
+<div #contacto><app-contacto></app-contacto></div>
 <app-fotofin></app-fotofin>
+
 <app-publicidad></app-publicidad>
+

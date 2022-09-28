@@ -15,12 +15,6 @@
   </ul>
   <span (click)="menu()">&#9776;</span>
   <div [ngClass]="mostrarMenu ? 'menu' : 'menu2'" >
-    <span> Inicio </span>
-    <span> Datos </span>
-    <span> Lugar </span>
-    <span> Fotos </span>
-    <span> Personas </span>
-    <span> Asistencia </span>
-    <span> Contacto </span>
+    <span *ngFor="let opcion of arrayMenu" (click)="opcionSeleccionada(opcion.valor)"> {{opcion.titulo}} </span>
   </div>
 </nav>

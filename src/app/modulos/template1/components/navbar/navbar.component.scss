@@ -45,8 +45,10 @@ ul{
     position: fixed;
     left: 0;
     width: 100vw;
-    background: -webkit-linear-gradient(to right, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f8b500, #fceabb);
+    //background: -webkit-linear-gradient(to right, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+    //background: url("https://i.pinimg.com/564x/66/13/94/66139413585acb39ae9cd796529f4dd7.jpg");
+    background: url("https://i.pinimg.com/564x/a5/6b/5a/a56b5a388f1f5186a6b9a008effea735.jpg");
+    //background: linear-gradient(to right, #f8b500, #fceabb);
     height: 100vh;
     clip-path: circle(150% at 100% 100%) ;
     transition: clip-path 0.5s ease;
