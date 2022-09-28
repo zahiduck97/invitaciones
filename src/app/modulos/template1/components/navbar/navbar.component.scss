@@ -45,10 +45,7 @@ ul{
     position: fixed;
     left: 0;
     width: 100vw;
-    //background: -webkit-linear-gradient(to right, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
-    //background: url("https://i.pinimg.com/564x/66/13/94/66139413585acb39ae9cd796529f4dd7.jpg");
     background: url("https://i.pinimg.com/564x/a5/6b/5a/a56b5a388f1f5186a6b9a008effea735.jpg");
-    //background: linear-gradient(to right, #f8b500, #fceabb);
     height: 100vh;
     clip-path: circle(150% at 100% 100%) ;
     transition: clip-path 0.5s ease;
@@ -59,8 +56,9 @@ ul{
     transition: clip-path 1s;
     z-index: 20;
     span{
-      text-decoration: underline;
-      color: rgb(88, 78, 78);
+      //text-decoration: underline;
+      color: #1B264F;
+      text-shadow: 2px 2px #ffffff;
     }
   }
   .menu2{
@@ -68,8 +66,7 @@ ul{
     position: fixed;
     left: 0;
     width: 100vw;
-    background: -webkit-linear-gradient(to right, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f8b500, #fceabb);
+    background: url("https://i.pinimg.com/564x/a5/6b/5a/a56b5a388f1f5186a6b9a008effea735.jpg");
     height: 100vh;
     clip-path: circle(0% at 100% 100%) ;
     transition: clip-path 0.5s ease;
@@ -80,6 +77,31 @@ ul{
     transition: clip-path 1s;
     z-index: 20;
 
+  }
+
+  // MAza need your help
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #1B264F;
+  }
+
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1B264F;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 
 }

@@ -15,6 +15,6 @@
   </ul>
   <span (click)="menu()">&#9776;</span>
   <div [ngClass]="mostrarMenu ? 'menu' : 'menu2'" >
-    <span *ngFor="let opcion of arrayMenu" (click)="opcionSeleccionada(opcion.valor)"> {{opcion.titulo}} </span>
+    <span class="hover-underline-animation" *ngFor="let opcion of arrayMenu" (click)="opcionSeleccionada(opcion.valor)"> {{opcion.titulo}} </span>
   </div>
 </nav>
