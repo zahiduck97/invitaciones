@@ -1,4 +1,6 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
+import jwtDecode, {JwtPayload} from "jwt-decode";
 
 @Component({
   selector: 'app-misxv1',
@@ -13,8 +15,14 @@ export class Misxv1Component{
   @ViewChild("personas") personas: ElementRef;
   @ViewChild("asistencia") asistencia: ElementRef;
   @ViewChild("contacto") contacto: ElementRef;
+  token = this.route.snapshot.params['id'];
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) {
+    if( this.token) {
+      const decoded = jwtDecode<JwtPayload>(this.token);
+      console.log(decoded)
+    }
+  }
 
   opcion(opcion) {
     this[opcion.valor].nativeElement.scrollIntoView({ behavior: "smooth", block: "start" });

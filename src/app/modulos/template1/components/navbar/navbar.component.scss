@@ -45,7 +45,7 @@ ul{
     position: fixed;
     left: 0;
     width: 100vw;
-    background: url("https://i.pinimg.com/564x/a5/6b/5a/a56b5a388f1f5186a6b9a008effea735.jpg");
+    background-image: url("../../../../../assets/fondo.jpg");
     height: 100vh;
     clip-path: circle(150% at 100% 100%) ;
     transition: clip-path 0.5s ease;
@@ -66,7 +66,7 @@ ul{
     position: fixed;
     left: 0;
     width: 100vw;
-    background: url("https://i.pinimg.com/564x/a5/6b/5a/a56b5a388f1f5186a6b9a008effea735.jpg");
+    background-image: url("../../../../../assets/fondo.jpg");
     height: 100vh;
     clip-path: circle(0% at 100% 100%) ;
     transition: clip-path 0.5s ease;
@@ -76,7 +76,6 @@ ul{
     align-items: center;
     transition: clip-path 1s;
     z-index: 20;
-
   }
 
   // MAza need your help

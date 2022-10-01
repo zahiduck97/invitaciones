@@ -4,6 +4,10 @@ import {Misxv1Component} from "./components/misxv1/misxv1.component";
 
 const routes: Routes = [
   {
+    path: ':id',
+    component: Misxv1Component
+  },
+  {
     path: '',
     component: Misxv1Component
   }
