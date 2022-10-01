@@ -35,7 +35,7 @@ import { PublicidadComponent } from './components/publicidad/publicidad.componen
   ],
   imports: [
     CommonModule,
-    Template1RoutingModule,
+    Template1RoutingModule
   ]
 })
 export class Template1Module { }

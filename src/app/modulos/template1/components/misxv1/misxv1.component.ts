@@ -1,6 +1,7 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import jwtDecode, {JwtPayload} from "jwt-decode";
+import {InvitadosService} from "../../../../services/invitados.service";
 
 @Component({
   selector: 'app-misxv1',
@@ -17,10 +18,14 @@ export class Misxv1Component{
   @ViewChild("contacto") contacto: ElementRef;
   token = this.route.snapshot.params['id'];
 
-  constructor(private route: ActivatedRoute) {
+  constructor(
+    private route: ActivatedRoute,
+    private invitadosSevice: InvitadosService
+  ) {
     if( this.token) {
-      const decoded = jwtDecode<JwtPayload>(this.token);
-      console.log(decoded)
+      this.invitadosSevice.updateVisualizacion(this.token).subscribe();
+      // const decoded = jwtDecode<JwtPayload>(this.token);
+      // console.log(decoded)
     }
   }
 
