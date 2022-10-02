@@ -28,20 +28,21 @@ section {
       transition: all 1s ease-in-out;
     }
 
-    .flechas{
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      display: flex;
-      color: rgba(0, 0, 0, 0.774);
-      font-size: xxx-large;
-      font-weight: bolder;
-      justify-content: space-between;
-      padding: 2rem;
-      span{
-        cursor: pointer;
-      }
-    }
+
+    //.flechas{
+    //  position: absolute;
+    //  top: 50%;
+    //  width: 100%;
+    //  display: flex;
+    //  color: rgba(0, 0, 0, 0.774);
+    //  font-size: xxx-large;
+    //  font-weight: bolder;
+    //  justify-content: space-between;
+    //  padding: 2rem;
+    //  span{
+    //    cursor: pointer;
+    //  }
+    //}
 
   }
 }

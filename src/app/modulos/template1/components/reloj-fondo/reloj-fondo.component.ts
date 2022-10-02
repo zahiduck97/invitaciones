@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 @Component({
   selector: 'app-reloj-fondo',
   templateUrl: './reloj-fondo.component.html',
   styleUrls: ['./reloj-fondo.component.scss']
 })
 export class RelojFondoComponent implements OnInit {
+  @Input() fecha;
   segs;
   diasEvento;
   horasEvento;
@@ -13,9 +14,11 @@ export class RelojFondoComponent implements OnInit {
   fechaEvento;
   fechaHoy;
   inte;
-  constructor() {
+  constructor() {}
+
+  ngOnInit(): void {
     this.fechaHoy = new Date();
-    this.fechaEvento = new Date('November 19, 2022 17:00:00');
+    this.fechaEvento = new Date(this.fecha).setTime(new Date(this.fecha).getTime() + 5 * 60 * 60 * 1000);
     this.segundosEvento  = Math.abs(this.fechaEvento - this.fechaHoy) / 1000;
     this.diasEvento = Math.floor(this.segundosEvento / 86400);
     this.segundosEvento -= this.diasEvento  * 86400;
@@ -24,17 +27,6 @@ export class RelojFondoComponent implements OnInit {
     this.minutosEvento = Math.floor(this.segundosEvento / 60) % 60;
     this.segundosEvento -= this.minutosEvento * 60;
     this.segs = Math.floor(this.segundosEvento % 60);
-  }
-
-  ngOnInit(): void {
-    console.log(this.fechaEvento);
-    console.log(this.segundosEvento);
-    console.log(this.diasEvento);
-    console.log(this.horasEvento);
-    console.log(this.minutosEvento);
-    console.log(this.segs);
-    // this.minutosEvento = 1
-    // this.horasEvento = 2
     this. inte = setInterval(() => this.retroceso(), 1000)
   }
   retroceso(){

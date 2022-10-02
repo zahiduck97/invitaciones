@@ -17,15 +17,16 @@ export class Misxv1Component{
   @ViewChild("asistencia") asistencia: ElementRef;
   @ViewChild("contacto") contacto: ElementRef;
   token = this.route.snapshot.params['id'];
+  data;
 
   constructor(
     private route: ActivatedRoute,
     private invitadosSevice: InvitadosService
   ) {
     if( this.token) {
-      this.invitadosSevice.updateVisualizacion(this.token).subscribe();
-      // const decoded = jwtDecode<JwtPayload>(this.token);
-      // console.log(decoded)
+      this.invitadosSevice.updateVisualizacion(this.token).subscribe(data => {
+        this.data = jwtDecode<JwtPayload>(data.data);
+      });
     }
   }
 

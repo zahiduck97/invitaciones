@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fotos.component.scss']
 })
 export class FotosComponent implements OnInit {
-  imgArray: string[] = ['alas', 'extra', 'montaña', 'rueda', 'sombrilla'];
+  imgArray: string[] = ['rueda','alas', 'extra', 'montaña', 'sombrilla'];
   index: number;
   currentSrc: string;
   constructor() {
@@ -15,11 +15,7 @@ export class FotosComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    setInterval(() => this.delante(), 2900)
-  }
-  atras () {
-    this.index = this.index === 0 ? this.imgArray.length -1 : this.index - 1;
-    this.currentSrc = `assets/${this.imgArray[this.index]}.jpg`;
+    setInterval(() => this.delante(), 4000)
   }
   delante () {
     this.index = this.index >= this.imgArray.length -1 ? 0 : this.index + 1;

@@ -1,3 +1,11 @@
+.shrink {
+  background: transparent !important;
+  transition: all .5s;
+}
+.h1-shrink {
+  display: none;
+  transition: all .5s;
+}
 nav {
   width: 100%;
   background-color: white;
@@ -7,9 +15,13 @@ nav {
   padding: 0rem 1rem 0rem 1rem;
   height: 10vh;
   align-items: center;
+  position: fixed;
+  z-index: 999;
+  transition: all .5s;
   h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    transition: all .5s;
   }
   span{
     display: none;
