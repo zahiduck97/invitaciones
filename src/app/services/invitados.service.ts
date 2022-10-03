@@ -7,10 +7,14 @@ import {Observable} from "rxjs";
   providedIn: 'root'
 })
 export class InvitadosService {
-  private url = environment.url + '/estadoInvitacion';
+  private url = environment.url + '/invitados';
   constructor(private http: HttpClient) { }
 
   updateVisualizacion(token): Observable<any>{
     return this.http.get<any>(this.url + '/getByIdAndIdProyecto', {headers: {token}})
+  }
+
+  update(token, data): Observable<any> {
+    return this.http.put(this.url, {token, data});
   }
 }

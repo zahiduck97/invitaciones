@@ -27,19 +27,19 @@ nav {
     display: none;
   }
 }
-ul{
-  width: 45%;
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  gap: 1rem;
-  li{
-    list-style: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-  }
-}
-@media (max-width: 768px) {
+//ul{
+//  width: 45%;
+//  display: flex;
+//  flex-direction: row;
+//  justify-content: end;
+//  gap: 1rem;
+//  li{
+//    list-style: none;
+//    font-family: 'Poppins', sans-serif;
+//    font-weight: 400;
+//  }
+//}
+//@media (max-width: 768px) {
   ul{
     display: none;
   }
@@ -115,4 +115,4 @@ ul{
     transform-origin: bottom left;
   }
 
-}
+//}
