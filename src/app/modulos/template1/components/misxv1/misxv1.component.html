@@ -1,4 +1,5 @@
-<div *ngIf="data">
+<div>
+  <!-- <div *ngIf="data"> -->
   <app-navbar (opcion)="opcion($event)" [alias]="data.alias"></app-navbar>
 
   <div #inicio><app-reloj-fondo [fecha]="data.fechaEvento"></app-reloj-fondo></div>
@@ -7,7 +8,7 @@
   <!-- <app-desscode></app-desscode> -->
   <div #fotos><app-fotos></app-fotos></div>
   <div #personas><app-personas></app-personas></div>
-  <div #asistencia><app-confirmar-asistencia></app-confirmar-asistencia></div>
+  <div #asistencia><app-confirmar-asistencia [token]="token"></app-confirmar-asistencia></div>
   <div #contacto><app-contacto></app-contacto></div>
   <app-fotofin></app-fotofin>
 
