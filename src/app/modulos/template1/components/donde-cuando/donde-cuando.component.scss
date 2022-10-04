@@ -1,10 +1,11 @@
 section{
   width: 100%;
-  height: 110.5vh;
+  height: 120.5vh;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  // background-color: red;
   padding-top: 3rem;
   gap: 4rem;
   h2{
@@ -15,7 +16,8 @@ section{
 }
 .cardsConteiner{
   width: 100%;
-  height: 90%;
+  // background-color: blue;
+  // height: auto;
   padding: 0 2rem 0 2rem;
   display: flex;
   justify-content: space-between;
@@ -23,9 +25,9 @@ section{
     background-color: rgba(223, 217, 217, 0.45);
     padding: 1rem;
     gap: .7rem;
-    height: 82%;
-    min-height: 36rem;
-    width: 35%;
+    // height: 90%;
+    // min-height: 36rem;
+    width: 30%;
     display: flex;
     flex-direction: column;
     .remark{
