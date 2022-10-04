@@ -9,8 +9,9 @@ import { InvitadosService } from '../../../../services/invitados.service';
 export class ConfirmarAsistenciaComponent implements OnInit {
   @Input() token;
   @Input() edoInvitacion;
-  // estadoLocal = 1;
-  constructor(private invitadosSevice: InvitadosService) { }
+  // edoInvitacion = 5;
+  constructor(private invitadosSevice: InvitadosService) {
+   }
 
   ngOnInit(): void {
     
