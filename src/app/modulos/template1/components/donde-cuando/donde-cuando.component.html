@@ -7,12 +7,13 @@
       <span class="remark">IGLESIA DE NUESTRA SEÑORA DE LA MEDALLA MILAGROSA LA ESTRELLA</span>
       <p><span class="remark">CUANDO:</span> 19 de noviembre 2022 19:00 hrs.</p>
       <p><span class="remark">DIRECCIÓN:</span> Libra 39, Estrella, 55210 Ecatepec de Morelos, Méx.</p>
-      <button class="botonMapa"> Ver mapa</button>
-      <div class="modal-overlay">
+      <button class="botonMapa" (click) ="mostrarModal()"> Ver mapa</button>
+      <app-modal (modal)="mostrarModal($event)" *ngIf="isModal"></app-modal>
+      <!-- <div class="modal-overlay">
         <div class="modal-content">
           <div class="modal-header">
             <a class="close-modal">✖</a><!-- close modal -->
-            <h4 class="modal-title">CEREMONIA RELIGIOSA</h4>
+            <!-- <h4 class="modal-title">CEREMONIA RELIGIOSA</h4>
           </div>
           <div class="modal-body">
             <div class="maps">
@@ -25,7 +26,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="cards">
       <span class="remark">SALÓN DE FIESTA</span>

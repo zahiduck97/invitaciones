@@ -14,6 +14,7 @@ import { ConfirmarAsistenciaComponent } from './components/confirmar-asistencia/
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { FotofinComponent } from './components/fotofin/fotofin.component';
 import { PublicidadComponent } from './components/publicidad/publicidad.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { PublicidadComponent } from './components/publicidad/publicidad.componen
         ConfirmarAsistenciaComponent,
         ContactoComponent,
         FotofinComponent,
-        PublicidadComponent
+        PublicidadComponent,
+        ModalComponent
   ],
   imports: [
     CommonModule,
