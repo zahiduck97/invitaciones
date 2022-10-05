@@ -7,7 +7,7 @@ import $ from 'jquery';
   styleUrls: ['./donde-cuando.component.scss']
 })
 export class DondeCuandoComponent implements AfterViewInit {
-  isModal = false;
+  opcion = 0;
   constructor() { }
 
   ngAfterViewInit(): void {
@@ -21,12 +21,8 @@ export class DondeCuandoComponent implements AfterViewInit {
     //   elements.removeClass('active');
     // });
   }
-  mostrarModal(event?){
-    console.log('papa');
-    
-    this.isModal = this.isModal ? false : true;
-    console.log(this.isModal);
-    
+  mostrarModal(valor){
+    this.opcion = valor;
   }
 
 }

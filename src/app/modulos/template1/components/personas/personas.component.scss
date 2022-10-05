@@ -48,7 +48,7 @@ section {
       .imgContenedor{
         background-color: white;
         box-shadow: 10px 10px 10px 10px black;
-        
+
         // max-width: 14rem;
         min-width: 10rem;
         width: 12rem;
@@ -58,9 +58,19 @@ section {
         // background-size: cover;
         clip-path: circle(38.2% at 49.8% 50%);
         img{
-          
           width: 100%;
+        }
+        .papa {
           clip-path: circle(37.4% at 49.8% 50%);
+          padding-top: 71px;
+          scale: 1.2;
+        }
+        .mama {
+          scale: 0.7;
+          clip-path: circle(58% at 49.8% 50%);
+        }
+        .madrina {
+          margin-top: 37px;
         }
       }
 

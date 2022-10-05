@@ -7,8 +7,8 @@
       <span class="remark">IGLESIA DE NUESTRA SEÑORA DE LA MEDALLA MILAGROSA LA ESTRELLA</span>
       <p><span class="remark">CUANDO:</span> 19 de noviembre 2022 19:00 hrs.</p>
       <p><span class="remark">DIRECCIÓN:</span> Libra 39, Estrella, 55210 Ecatepec de Morelos, Méx.</p>
-      <button class="botonMapa" (click) ="mostrarModal()"> Ver mapa</button>
-      <app-modal (modal)="mostrarModal($event)" *ngIf="isModal"></app-modal>
+      <button class="botonMapa" (click) ="mostrarModal(1)"> Ver mapa</button>
+      <app-modal (modal)="mostrarModal($event)" [valor]="opcion" *ngIf="opcion === 1"></app-modal>
       <!-- <div class="modal-overlay">
         <div class="modal-content">
           <div class="modal-header">
@@ -34,7 +34,8 @@
       <span class="remark">SALÓN ARIES PREMIER</span>
       <p><span class="remark">CUANDO:</span> 19 de noviembre 2022 20:30 hrs.</p>
       <p><span class="remark">DIRECCIÓN:</span> Esquina con, Calle Azucena Azahares 23, C. Azucena, Jardines del Tepeyac, 55220 Ecatepec de Morelos, Méx.</p>
-      <button> Ver mapa</button>
+      <button class="botonMapa" (click) ="mostrarModal(2)"> Ver mapa</button>
+      <app-modal (modal)="mostrarModal($event)" [valor]="opcion" *ngIf="opcion === 2"></app-modal>
     </div>
   </div>
 </section>
