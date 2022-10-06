@@ -27,7 +27,7 @@ export class Misxv1Component{
       this.invitadosSevice.updateVisualizacion(this.token).subscribe(data => {
         this.data = jwtDecode<JwtPayload>(data.data);
         console.log(this.data);
-        
+
       });
     }
   }
@@ -36,4 +36,7 @@ export class Misxv1Component{
     this[opcion.valor].nativeElement.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
+  nuevoEstado(event){
+    this.data.idEstadoInvitacion = event;
+  }
 }

@@ -8,7 +8,7 @@
   <!-- <app-desscode></app-desscode> -->
   <div #fotos><app-fotos></app-fotos></div>
   <div #personas><app-personas></app-personas></div>
-  <div #asistencia><app-confirmar-asistencia [token]="token" [edoInvitacion]="data.idEstadoInvitacion"></app-confirmar-asistencia></div>
+  <div #asistencia><app-confirmar-asistencia [token]="token" (estadoAsistencia)="nuevoEstado($event)" [edoInvitacion]="data.idEstadoInvitacion"></app-confirmar-asistencia></div>
   <div #contacto><app-contacto></app-contacto></div>
   <app-fotofin></app-fotofin>
 
