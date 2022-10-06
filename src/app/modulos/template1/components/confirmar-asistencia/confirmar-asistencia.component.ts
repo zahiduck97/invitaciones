@@ -14,14 +14,19 @@ export class ConfirmarAsistenciaComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    
+
   }
-  asistencia(estadoInvitacion){
-    console.log(estadoInvitacion);
-    
-    this.invitadosSevice.update(this.token, {estadoInvitacion})
-    // .subscribe({
-    //   complete: () => this.estadoLocal = estadoInvitacion
-    // })
-  } 
+  asistencia(idEstadoInvitacion){
+    console.log(idEstadoInvitacion);
+
+    this.invitadosSevice.update(this.token, {idEstadoInvitacion}).subscribe({
+      next: () => {
+        console.log('Se actualizó el estado')
+        window.location.reload();
+      },
+      error: () => {
+        console.log('Ay no :c');
+      },
+    });
+  }
 }

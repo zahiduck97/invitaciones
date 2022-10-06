@@ -16,7 +16,7 @@ export class InvitadosService {
 
   update(token, data): Observable<any> {
     console.log('s');
-    
+
     return this.http.put(this.url, {token, data});
   }
 }
