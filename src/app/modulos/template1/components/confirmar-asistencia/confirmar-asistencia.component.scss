@@ -14,7 +14,7 @@ section{
     font-family: 'Laila', sans-serif;
     font-size: 2.95rem;
     }
-  h5{
+  h5, h3{
     font-family: 'Poppins', sans-serif;
   }
   .cancelar{
@@ -97,7 +97,7 @@ form{
 @media (max-width: 768px) {
   section {
     text-align: center;
-    h5{
+    h5, h3{
       width: 80%;
     }
     .cancelar{
