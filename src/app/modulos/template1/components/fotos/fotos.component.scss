@@ -2,12 +2,8 @@ section {
   width: 100%;
   margin-top: 9rem;
   height: 120vh;
-  // background-color: green;
   position: relative;
   overflow: hidden;
-
-  // background-color: blue;
-
   h2 {
     text-align: center;
     font-family: 'Laila', sans-serif;
@@ -16,35 +12,12 @@ section {
   div{
     width: 100%;
     height: auto;
-    // overflow: hidden;
-    // position: relative;
-    // display: flex;
-    // justify-content: center;
-    // transition: all 1s ease-in-out;
-
     img{
       width: 100%;
       height: auto;
       object-fit: cover;
       transition: all 1s ease-in-out;
     }
-
-
-    //.flechas{
-    //  position: absolute;
-    //  top: 50%;
-    //  width: 100%;
-    //  display: flex;
-    //  color: rgba(0, 0, 0, 0.774);
-    //  font-size: xxx-large;
-    //  font-weight: bolder;
-    //  justify-content: space-between;
-    //  padding: 2rem;
-    //  span{
-    //    cursor: pointer;
-    //  }
-    //}
-
   }
 }
 
@@ -62,5 +35,11 @@ section {
         height: 100%;
       }
     }
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    margin-top: 2rem;
   }
 }

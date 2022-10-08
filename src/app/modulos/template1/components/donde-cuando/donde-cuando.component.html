@@ -4,9 +4,10 @@
     <div class="cards">
       <span class="remark">CEREMONIA RELIGIOSA</span>
       <img src="assets/misa.png">
-      <span class="remark">IGLESIA DE NUESTRA SEÑORA DE LA MEDALLA MILAGROSA LA ESTRELLA</span>
-      <p><span class="remark">CUANDO:</span> 19 de noviembre 2022 19:00 hrs.</p>
-      <p><span class="remark">DIRECCIÓN:</span> Libra 39, Estrella, 55210 Ecatepec de Morelos, Méx.</p>
+      <span class="remark">NUESTRA SEÑORA DE LA MEDALLA MILAGROSA</span>
+      <p><span class="remark">CUANDO:</span> 19 de noviembre</p>
+      <p><span class="remark">HORA:</span> 19:00 hrs.</p>
+      <p><span class="remark">DIRECCIÓN:</span> Libra 39, Col. Estrella, 55210 Ecatepec de Morelos, Méx.</p>
       <button class="botonMapa" (click) ="mostrarModal(1)"> Ver mapa</button>
       <app-modal (modal)="mostrarModal($event)" [valor]="opcion" *ngIf="opcion === 1"></app-modal>
       <!-- <div class="modal-overlay">
@@ -32,10 +33,12 @@
       <span class="remark">SALÓN DE FIESTA</span>
       <img src="assets/salon.png">
       <span class="remark">SALÓN ARIES PREMIER</span>
-      <p><span class="remark">CUANDO:</span> 19 de noviembre 2022 20:30 hrs.</p>
-      <p><span class="remark">DIRECCIÓN:</span> Esquina con, Calle Azucena Azahares 23, C. Azucena, Jardines del Tepeyac, 55220 Ecatepec de Morelos, Méx.</p>
+      <p><span class="remark">CUANDO:</span> 19 de noviembre</p>
+      <p><span class="remark">HORA:</span> 20:30 hrs.</p>
+      <p><span class="remark">DIRECCIÓN:</span> C. Azucena #23, Esq. Azahares, Jardines del Tepeyac, 55220 Ecatepec de Morelos, Méx.</p>
       <button class="botonMapa" (click) ="mostrarModal(2)"> Ver mapa</button>
       <app-modal (modal)="mostrarModal($event)" [valor]="opcion" *ngIf="opcion === 2"></app-modal>
     </div>
   </div>
+  <h2 class="fotos">Fotos</h2>
 </section>

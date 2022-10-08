@@ -7,6 +7,7 @@ section{
   align-items: center;
   padding-top: 3rem;
   gap: 4rem;
+  background: linear-gradient(to right, #f56960, #fceabb);
   h2{
     text-align: center;
     font-family: 'Laila', sans-serif;
@@ -41,6 +42,13 @@ section{
 @media (max-width: 768px) {
   section {
     text-align: center;
+  }
+
+}
+
+@media (max-width: 480px) {
+  section {
+    padding-top: 0;
   }
 
 }

@@ -27,10 +27,6 @@ section{
     .xv{
       font-size: 6rem;
     }
-    //.nombre{
-    //  font-family: 'Poppins', sans-serif;
-    //  font-size: 3rem;
-    //}
     .detalle{
       font-size: 3rem;
     }
@@ -60,6 +56,21 @@ section{
       }
       .detalle{
         font-size: 1.1rem;
+      }
+    }
+
+  }
+
+}
+
+@media (max-width: 480px) {
+  section {
+    .reloj{
+      bottom: 2rem;
+      .xv{
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 80px;
       }
     }
 

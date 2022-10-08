@@ -35,7 +35,7 @@ background: linear-gradient(to right, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, F
   }
   .texto3{
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 2rem;
   }
   span{
     font-size: 2.65rem;
@@ -80,6 +80,18 @@ background: linear-gradient(to right, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, F
       .texto1{
         font-size: 2.3rem;
       }
+    }
+  }
+  .texto2{
+    font-size: 2.6rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+  section{
+    div{
+      gap: 0;
     }
   }
 }

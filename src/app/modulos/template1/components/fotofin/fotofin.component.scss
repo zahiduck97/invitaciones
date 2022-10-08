@@ -43,10 +43,11 @@ section{
     }
   }
   mark{
-    background-color: #f8b600cb;
+    background-color: transparent;
     color: white;
     padding: 10px;
-  }
+    text-shadow: 2px 2px black
+  };
 }
 
 @media (max-width: 768px) {
@@ -62,7 +63,18 @@ section{
       }
       span{
         font-size: 1.66rem;
+        line-height: 2.5rem;
       }
+    }
+
+  }
+
+}
+
+@media (max-width: 480px) {
+  section {
+    .reloj{
+      bottom: 0;
     }
 
   }

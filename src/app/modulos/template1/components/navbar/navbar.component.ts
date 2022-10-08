@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, EventEmitter, Input, Output} from '@angular/core';
+import {AfterViewInit, Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import $ from 'jquery';
 
 @Component({
@@ -6,7 +6,7 @@ import $ from 'jquery';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements AfterViewInit{
+export class NavbarComponent implements AfterViewInit, OnInit{
   mostrarMenu = false;
   @Input() alias;
   @Output() opcion = new EventEmitter();
@@ -18,8 +18,15 @@ export class NavbarComponent implements AfterViewInit{
     {titulo: 'PERSONAS', valor: "personas"},
     {titulo: 'ASISTENCIA', valor: "asistencia"},
     {titulo: 'CONTACTO', valor: "contacto"},
+    {titulo: 'FIN', valor: "fin"},
   ]
-  constructor() { }
+  ngOnInit() {
+    const datos = this.alias.split(' ');
+    this.alias = `${datos[0]}    ${datos[1]}`
+  }
+
+  constructor() {
+  }
 
   menu () {
     this.mostrarMenu = !this.mostrarMenu;

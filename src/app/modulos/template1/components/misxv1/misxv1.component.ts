@@ -16,6 +16,7 @@ export class Misxv1Component{
   @ViewChild("personas") personas: ElementRef;
   @ViewChild("asistencia") asistencia: ElementRef;
   @ViewChild("contacto") contacto: ElementRef;
+  @ViewChild("fin") fin: ElementRef;
   token = this.route.snapshot.params['id'];
   data;
 

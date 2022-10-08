@@ -18,28 +18,16 @@ nav {
   position: fixed;
   z-index: 999;
   transition: all .5s;
-  h1{
-    font-family: 'Poppins', sans-serif;
+  pre{
+    font-family: 'lovecraft', 'Poppins', sans-serif;
     font-weight: 400;
     transition: all .5s;
+    font-size: 55px;
   }
   span{
     display: none;
   }
 }
-//ul{
-//  width: 45%;
-//  display: flex;
-//  flex-direction: row;
-//  justify-content: end;
-//  gap: 1rem;
-//  li{
-//    list-style: none;
-//    font-family: 'Poppins', sans-serif;
-//    font-weight: 400;
-//  }
-//}
-//@media (max-width: 768px) {
   ul{
     display: none;
   }
@@ -115,4 +103,24 @@ nav {
     transform-origin: bottom left;
   }
 
-//}
+@font-face {
+  font-family: 'lovecraft';
+  font-style: normal;
+  font-weight: normal;
+  src: local('lovecraft'), url('../../../../../assets/lovecraft.otf') format('truetype');
+}
+@media (max-width: 480px) {
+  nav {
+    pre {
+      font-size: 45px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+ nav {
+   pre {
+     font-size: 35px;
+   }
+ }
+}

@@ -6,21 +6,10 @@ import $ from 'jquery';
   templateUrl: './donde-cuando.component.html',
   styleUrls: ['./donde-cuando.component.scss']
 })
-export class DondeCuandoComponent implements AfterViewInit {
+export class DondeCuandoComponent {
   opcion = 0;
   constructor() { }
 
-  ngAfterViewInit(): void {
-    // const elements = $('.modal-overlay, .modal');
-
-    // $('.botonMapa').click(function(){
-    //   elements.addClass('active');
-    // });
-
-    // $('.close-modal').click(function(){
-    //   elements.removeClass('active');
-    // });
-  }
   mostrarModal(valor){
     this.opcion = valor;
   }

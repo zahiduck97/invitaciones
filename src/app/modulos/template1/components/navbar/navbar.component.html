@@ -1,17 +1,7 @@
 <nav>
   <div>
-    <h1>{{this.alias}}</h1>
+    <h1><pre>Zeltzin    Yazaret</pre></h1>
   </div>
-
-<!--  <ul>-->
-<!--    <li> Inicio </li>-->
-<!--    <li> Datos </li>-->
-<!--    <li> Lugar </li>-->
-<!--    <li> Fotos </li>-->
-<!--    <li> Personas </li>-->
-<!--    <li> Asistencia </li>-->
-<!--    <li> Contacto </li>-->
-<!--  </ul>-->
   <span (click)="menu()">&#9776;</span>
   <div [ngClass]="mostrarMenu ? 'menu' : 'menu2'" >
     <span class="hover-underline-animation" *ngFor="let opcion of arrayMenu" (click)="opcionSeleccionada(opcion.valor)"> {{opcion.titulo}} </span>
