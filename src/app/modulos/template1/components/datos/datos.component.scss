@@ -23,6 +23,7 @@ background: linear-gradient(to right, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, F
     gap: 1.5rem;
     color: whitesmoke;
     text-shadow: 3px 3px rgba(0, 0, 0, 0.659);
+    // animation: moveInRigth 2s ease-out;
   }
   .texto1{
     text-align: center;
@@ -69,7 +70,20 @@ background: linear-gradient(to right, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, F
 
   }
 }
-
+@keyframes moveInRigth {
+  0%{
+      opacity: 0;
+      transform: translateX(100px);
+  }
+  80%{
+    opacity: .5;
+      transform: translateX(-10px);
+  }
+  100%{
+      opacity: 1;
+      transform: translate(0);
+  }
+}
 @media (max-width: 768px) {
   .div2{
     .texto5{

@@ -1,4 +1,4 @@
-<section *ngIf="edoInvitacion=== 2 || edoInvitacion===3" >
+<section *ngIf="edoInvitacion=== 2 || edoInvitacion===3" #cardsContainer>
   <h2>Confirmar asistencia</h2>
   <h5>Favor de confirmar asistencia 20 días antes del evento</h5>
   <div class="btnContainer">
@@ -13,7 +13,7 @@
 </section>
 
 <!-- cancelar -->
-<section *ngIf="edoInvitacion=== 4" >
+<section *ngIf="edoInvitacion=== 4" #cardsContainer>
   <h2>Gracias por confirmar tu asistencia</h2>
     <h5>¿Surgió algún contratiempo? Puedes cancelar tu asistencia</h5>
     <button class="cancelar" (click)="asistencia(5)">Cancelar asistencia</button>
@@ -21,7 +21,7 @@
 </section>
 
 <!-- cambiar  -->
-<section *ngIf="edoInvitacion===5">
+<section *ngIf="edoInvitacion===5" #cardsContainer>
   <h2>Lastima que no puedas acompañarnos</h2>
     <h5>Recuerda que siempre puedes cambiar de opinion</h5>
     <button class="confirmar" (click)="asistencia(4)">Confirmar asistencia</button>

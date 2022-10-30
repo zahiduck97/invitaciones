@@ -24,10 +24,11 @@ export class Misxv1Component{
     private route: ActivatedRoute,
     private invitadosSevice: InvitadosService
   ) {
+    
     if( this.token) {
       this.invitadosSevice.updateVisualizacion(this.token).subscribe(data => {
         this.data = jwtDecode<JwtPayload>(data.data);
-        console.log(this.data);
+        // console.log(this.data);
 
       });
     }

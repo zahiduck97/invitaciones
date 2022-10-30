@@ -3,7 +3,7 @@ section {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 3rem;
   gap: 4rem;
@@ -67,6 +67,20 @@ section {
         }
       }
 
+  }
+}
+@keyframes moveInRigth {
+  0%{
+      opacity: 0;
+      transform: translateX(100px);
+  }
+  80%{
+    opacity: .5;
+      transform: translateX(-10px);
+  }
+  100%{
+      opacity: 1;
+      transform: translate(0);
   }
 }
 @media (max-width: 965px) {

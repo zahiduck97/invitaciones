@@ -24,6 +24,9 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // transform: translate(-50%, -50%);
+    animation-name: moveInLeft;
+    animation-duration: 3s;
     .xv{
       font-size: 6rem;
     }
@@ -37,7 +40,19 @@ section{
     }
   }
 }
-
+@keyframes moveInLeft {
+  0%{
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+  80%{
+      transform: translateX(10px);
+  }
+  100%{
+      opacity: 1;
+      transform: translate(0);
+  }
+}
 @media (max-width: 768px) {
   section {
     .reloj{
