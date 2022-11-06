@@ -1,4 +1,4 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, ViewChild} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import jwtDecode, {JwtPayload} from "jwt-decode";
 import {InvitadosService} from "../../../../services/invitados.service";
@@ -19,19 +19,23 @@ export class Misxv1Component{
   @ViewChild("fin") fin: ElementRef;
   token = this.route.snapshot.params['id'];
   data;
+  audio = new Audio('assets/song.mp3');
+  reproduciendo = 0;
+
 
   constructor(
     private route: ActivatedRoute,
     private invitadosSevice: InvitadosService
   ) {
-    
     if( this.token) {
       this.invitadosSevice.updateVisualizacion(this.token).subscribe(data => {
         this.data = jwtDecode<JwtPayload>(data.data);
-        // console.log(this.data);
-
       });
     }
+    this.audio.onended = () => {
+      this.reproducir(0)
+    };
+    this.reproducir(1);
   }
 
   opcion(opcion) {
@@ -40,5 +44,10 @@ export class Misxv1Component{
 
   nuevoEstado(event){
     this.data.idEstadoInvitacion = event;
+  }
+
+  reproducir(valor) {
+    valor == 1 ? this.audio.play() : this.audio.pause();
+    this.reproduciendo = valor;
   }
 }
