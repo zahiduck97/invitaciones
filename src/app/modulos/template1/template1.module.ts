@@ -15,6 +15,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { FotofinComponent } from './components/fotofin/fotofin.component';
 import { PublicidadComponent } from './components/publicidad/publicidad.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { Modal2Component } from './components/modal2/modal2.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { ModalComponent } from './components/modal/modal.component';
         ContactoComponent,
         FotofinComponent,
         PublicidadComponent,
-        ModalComponent
+        ModalComponent,
+        Modal2Component
   ],
   imports: [
     CommonModule,
