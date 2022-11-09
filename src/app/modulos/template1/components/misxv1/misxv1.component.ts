@@ -30,6 +30,8 @@ export class Misxv1Component{
     if( this.token) {
       this.invitadosSevice.updateVisualizacion(this.token).subscribe(data => {
         this.data = jwtDecode<JwtPayload>(data.data);
+        console.log(this.data);
+        
       });
     }
     this.audio.onended = () => {
