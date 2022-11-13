@@ -40,7 +40,10 @@ import { Modal2Component } from './components/modal2/modal2.component';
         ContactoComponent,
         FotofinComponent,
         PublicidadComponent,
-        ModalComponent
+        ModalComponent,
+        QrComponent,
+        ScannerQrComponent,
+        Modal2Component
   ],
   imports: [
     CommonModule,
