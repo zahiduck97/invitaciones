@@ -15,6 +15,8 @@ export class Misxv1Component{
   @ViewChild("fotos") fotos: ElementRef;
   @ViewChild("personas") personas: ElementRef;
   @ViewChild("asistencia") asistencia: ElementRef;
+  @ViewChild("qr") qr: ElementRef;
+  @ViewChild("scanner") scanner: ElementRef;
   @ViewChild("contacto") contacto: ElementRef;
   @ViewChild("fin") fin: ElementRef;
   token = this.route.snapshot.params['id'];

@@ -16,6 +16,8 @@
   <div #fotos><app-fotos></app-fotos></div>
   <div #personas><app-personas></app-personas></div>
   <div #asistencia><app-confirmar-asistencia [token]="token" (estadoAsistencia)="nuevoEstado($event)" [edoInvitacion]="data.idEstadoInvitacion"></app-confirmar-asistencia></div>
+  <div #qr><app-qr></app-qr></div>
+  <!-- <div #scanner><app-scanner-qr></app-scanner-qr></div> -->
   <div #contacto><app-contacto></app-contacto></div>
   <div #fin><app-fotofin></app-fotofin></div>
   <app-modal2 (modal)="mostrarModal($event)" *ngIf="mostrandoModal" [boletos]="data.numeroBoletos"></app-modal2>
