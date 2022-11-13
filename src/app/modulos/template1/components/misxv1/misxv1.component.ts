@@ -21,8 +21,8 @@ export class Misxv1Component{
   data;
   audio = new Audio('assets/song.mp3');
   reproduciendo = 0;
-
-
+  mostrandoModal=1
+// si quieres vovler a abrir el modal luego de cerrarlo, refresca la pantalla
   constructor(
     private route: ActivatedRoute,
     private invitadosSevice: InvitadosService
@@ -30,6 +30,8 @@ export class Misxv1Component{
     if( this.token) {
       this.invitadosSevice.updateVisualizacion(this.token).subscribe(data => {
         this.data = jwtDecode<JwtPayload>(data.data);
+        console.log(this.data);
+        
       });
     }
     this.audio.onended = () => {
@@ -49,5 +51,8 @@ export class Misxv1Component{
   reproducir(valor) {
     valor == 1 ? this.audio.play() : this.audio.pause();
     this.reproduciendo = valor;
+  }
+  mostrarModal(valor){
+    this.mostrandoModal = valor;
   }
 }

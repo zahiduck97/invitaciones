@@ -18,6 +18,7 @@
   <div #asistencia><app-confirmar-asistencia [token]="token" (estadoAsistencia)="nuevoEstado($event)" [edoInvitacion]="data.idEstadoInvitacion"></app-confirmar-asistencia></div>
   <div #contacto><app-contacto></app-contacto></div>
   <div #fin><app-fotofin></app-fotofin></div>
+  <app-modal2 (modal)="mostrarModal($event)" *ngIf="mostrandoModal" [boletos]="data.numeroBoletos"></app-modal2>
 
 <!--  <app-publicidad></app-publicidad>-->
 </div>

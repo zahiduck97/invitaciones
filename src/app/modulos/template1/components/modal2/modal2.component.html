@@ -1,0 +1,18 @@
+<div class="contenedor">
+    <div class="boletos">
+        <p>Numero de boletos: {{boletos}}</p>
+        <p>Asisten:</p>
+        <div class="elems">
+            <div 
+                *ngFor="let in of invs"
+                [ngClass]="{'elem': numSelected !== in, 'elemSelected' : numSelected === in }"
+                 (click)="selection(in)">
+                <p>{{in}}</p>
+            </div>
+        </div>
+    </div>
+    <div >
+        <button (click)="cerrarModal()">Cerrar</button>
+        <button (click)="registerAttendance()" [disabled]="selected !== true">Aceptar</button>
+    </div>
+</div>
