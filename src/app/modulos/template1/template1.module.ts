@@ -21,6 +21,7 @@ import {ZXingScannerModule} from "@zxing/ngx-scanner";
 import {NgxQRCodeModule} from "@techiediaries/ngx-qrcode";
 import {FormsModule} from "@angular/forms";
 import { Modal2Component } from './components/modal2/modal2.component';
+import {NgxScannerQrcodeModule} from "ngx-scanner-qrcode";
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { Modal2Component } from './components/modal2/modal2.component';
     Template1RoutingModule,
     ZXingScannerModule,
     NgxQRCodeModule,
-    FormsModule
-  ]
+    FormsModule,
+    NgxScannerQrcodeModule,
+  ],
 })
 export class Template1Module { }
