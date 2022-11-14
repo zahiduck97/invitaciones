@@ -8,7 +8,7 @@ import {InvitadosService} from "../../../../services/invitados.service";
   templateUrl: './misxv1.component.html',
   styleUrls: ['./misxv1.component.scss']
 })
-export class Misxv1Component{
+export class Misxv1Component {
   @ViewChild("inicio") inicio: ElementRef;
   @ViewChild("datos") datos: ElementRef;
   @ViewChild("lugar") lugar: ElementRef;
@@ -23,17 +23,18 @@ export class Misxv1Component{
   data;
   audio = new Audio('assets/song.mp3');
   reproduciendo = 0;
-  mostrandoModal=1
+  mostrandoModal = 1
+
 // si quieres vovler a abrir el modal luego de cerrarlo, refresca la pantalla
   constructor(
     private route: ActivatedRoute,
     private invitadosSevice: InvitadosService
   ) {
-    if( this.token) {
+    if (this.token) {
       this.invitadosSevice.updateVisualizacion(this.token).subscribe(data => {
         this.data = jwtDecode<JwtPayload>(data.data);
         console.log(this.data);
-        
+
       });
     }
     this.audio.onended = () => {
@@ -43,10 +44,10 @@ export class Misxv1Component{
   }
 
   opcion(opcion) {
-    this[opcion.valor].nativeElement.scrollIntoView({ behavior: "smooth", block: "start" });
+    this[opcion.valor].nativeElement.scrollIntoView({behavior: "smooth", block: "start"});
   }
 
-  nuevoEstado(event){
+  nuevoEstado(event) {
     this.data.idEstadoInvitacion = event;
   }
 
@@ -54,7 +55,8 @@ export class Misxv1Component{
     valor == 1 ? this.audio.play() : this.audio.pause();
     this.reproduciendo = valor;
   }
-  mostrarModal(valor){
+
+  mostrarModal(valor) {
     this.mostrandoModal = valor;
   }
 }

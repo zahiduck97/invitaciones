@@ -1,4 +1,6 @@
-import { Component,   EventEmitter, Input, OnInit, Output } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {InvitadosService} from "../../../../services/invitados.service";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-modal2',
@@ -7,26 +9,32 @@ import { Component,   EventEmitter, Input, OnInit, Output } from '@angular/core'
 })
 export class Modal2Component implements OnInit {
   @Output() public modal = new EventEmitter<any>();
-  @Input() boletos;
+  @Input() totales;
+  @Input() escaneados;
   invs
-  selected = false;
   numSelected
-// falta  detectar si fue escaneado y ahi cambiar 
+// falta  detectar si fue escaneado y ahi cambiar
 // en el componente misxv1 el mostrandoModal
 
-  constructor() { }
+  constructor(
+    private invitadosService: InvitadosService,
+    private route: ActivatedRoute) {
+  }
 
   ngOnInit(): void {
-    this.invs=Array(this.boletos).fill(1).map((x, i) => i + 1);
+    this.invs = Array(this.totales-this.escaneados).fill(1).map((x, i) => i + 1);
   }
-  selection(number){
-    this.selected = true
+
+  selection(number) {
     this.numSelected = number
   }
-  cerrarModal(){
+
+  cerrarModal() {
     this.modal.emit(0)
   }
-  registerAttendance(){
-     // se hace aqui la peticion necesaria con el numSelected
+
+  registerAttendance() {
+    this.invitadosService.updateEscaneados(this.route.snapshot.params['id'], {escaneados: this.numSelected})
+      .subscribe(() => this.cerrarModal())
   }
 }
