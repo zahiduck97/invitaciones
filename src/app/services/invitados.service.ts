@@ -15,8 +15,10 @@ export class InvitadosService {
   }
 
   update(token, data): Observable<any> {
-    console.log('s');
-
     return this.http.put(this.url, {token, data});
+  }
+
+  updateEscaneados(token, data): Observable<any> {
+    return this.http.put(`${this.url}/escaneados`, {token, data});
   }
 }

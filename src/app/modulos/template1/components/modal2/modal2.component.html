@@ -1,18 +1,24 @@
 <div class="contenedor">
-    <div class="boletos">
-        <p>Numero de boletos: {{boletos}}</p>
-        <p>Asisten:</p>
-        <div class="elems">
-            <div 
-                *ngFor="let in of invs"
-                [ngClass]="{'elem': numSelected !== in, 'elemSelected' : numSelected === in }"
-                 (click)="selection(in)">
-                <p>{{in}}</p>
-            </div>
+  <div class="boletos">
+    <p>TOTALES: {{totales}}</p>
+    <p>ESCANEADOS: {{escaneados}}</p>
+    <br>
+    <ng-template #faltan>
+      <p>FALTAN:</p>
+      <div class="elems">
+        <div
+          *ngFor="let in of invs"
+          [ngClass]="{'elem': numSelected !== in, 'elemSelected' : numSelected === in }"
+          (click)="selection(in)">
+          <p>{{in}}</p>
         </div>
-    </div>
-    <div >
-        <button (click)="cerrarModal()">Cerrar</button>
-        <button (click)="registerAttendance()" [disabled]="selected !== true">Aceptar</button>
-    </div>
+      </div>
+    </ng-template>
+
+    <p *ngIf="totales === escaneados; else faltan">YA SE ESCANEARON TODOS LOS BOLETOS :D</p>
+  </div>
+  <div class="button-container">
+    <button (click)="cerrarModal()">CERRAR</button>
+    <button *ngIf="totales !== escaneados" (click)="registerAttendance()" [disabled]="!numSelected">ACEPTAR</button>
+  </div>
 </div>
