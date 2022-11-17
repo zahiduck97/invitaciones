@@ -16,7 +16,7 @@ import { FotofinComponent } from './components/fotofin/fotofin.component';
 import { PublicidadComponent } from './components/publicidad/publicidad.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { Modal2Component } from './components/modal2/modal2.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,8 @@ import { Modal2Component } from './components/modal2/modal2.component';
   ],
   imports: [
     CommonModule,
-    Template1RoutingModule
+    Template1RoutingModule,
+    FormsModule
   ]
 })
 export class Template1Module { }

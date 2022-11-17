@@ -16,12 +16,18 @@ export class Modal2Component implements OnInit {
 // falta  detectar si fue escaneado y ahi cambiar
 // en el componente misxv1 el mostrandoModal
 
+  passCheck = false //variable para dedtectar si paso la contraseña
+  password //binding alñ input
+  correctPassword = 'qwe12' //contraseña correcta
+  intentos = 0 
+
   constructor(
     private invitadosService: InvitadosService,
     private route: ActivatedRoute) {
   }
 
   ngOnInit(): void {
+    console.log(this.escaneados);
     this.invs = Array(this.totales-this.escaneados).fill(1).map((x, i) => i + 1);
   }
 
@@ -36,5 +42,21 @@ export class Modal2Component implements OnInit {
   registerAttendance() {
     this.invitadosService.updateEscaneados(this.route.snapshot.params['id'], {escaneados: this.numSelected})
       .subscribe(() => this.cerrarModal())
+  }
+  checkPass(){
+    console.log(this.intentos);
+    
+    if (this.intentos >= 2) {
+      this.cerrarModal()
+      return
+    }
+    if (this.correctPassword === this.password){
+      this.passCheck = true
+      this.intentos = 0
+    } else {
+      this.passCheck = false
+      this.password = ''
+      this.intentos++
+    }
   }
 }
