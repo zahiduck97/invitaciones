@@ -1,5 +1,5 @@
 <div class="contenedor">
-  <div class="boletos">
+  <div class="boletos" *ngIf="passCheck">
     <p>TOTALES: {{totales}}</p>
     <p>ESCANEADOS: {{escaneados}}</p>
     <br>
@@ -17,8 +17,16 @@
 
     <p *ngIf="totales === escaneados; else faltan">YA SE ESCANEARON TODOS LOS BOLETOS :D</p>
   </div>
-  <div class="button-container">
+
+  <!-- div input pass -->
+  <div class="boletos" *ngIf="!passCheck">
+    <input type="text" class="form__input" id="pass" [(ngModel)]="password" placeholder="Password" required="" />
+    <label for="pass" class="form__label">Password</label>
+    <button (click)="checkPass()" class="passbtn">Entrar</button>
+  </div>
+  <div class="button-container" *ngIf="passCheck">
     <button (click)="cerrarModal()">CERRAR</button>
     <button *ngIf="totales !== escaneados" (click)="registerAttendance()" [disabled]="!numSelected">ACEPTAR</button>
   </div>
 </div>
+
