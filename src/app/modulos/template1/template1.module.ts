@@ -16,7 +16,6 @@ import { FotofinComponent } from './components/fotofin/fotofin.component';
 import { PublicidadComponent } from './components/publicidad/publicidad.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { QrComponent } from './components/qr/qr.component';
-import { ScannerQrComponent } from './components/scanner-qr/scanner-qr.component';
 import {ZXingScannerModule} from "@zxing/ngx-scanner";
 import {NgxQRCodeModule} from "@techiediaries/ngx-qrcode";
 import {FormsModule} from "@angular/forms";
@@ -42,7 +41,6 @@ import {NgxScannerQrcodeModule} from "ngx-scanner-qrcode";
         PublicidadComponent,
         ModalComponent,
         QrComponent,
-        ScannerQrComponent,
         Modal2Component
   ],
   imports: [
