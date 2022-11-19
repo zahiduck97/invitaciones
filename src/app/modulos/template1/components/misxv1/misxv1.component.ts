@@ -23,7 +23,7 @@ export class Misxv1Component {
   data;
   audio = new Audio('assets/song.mp3');
   reproduciendo = 0;
-  mostrandoModal = 1
+  mostrandoModal = 0
 
 // si quieres vovler a abrir el modal luego de cerrarlo, refresca la pantalla
   constructor(
@@ -34,7 +34,9 @@ export class Misxv1Component {
       this.invitadosSevice.updateVisualizacion(this.token).subscribe(data => {
         this.data = jwtDecode<JwtPayload>(data.data);
         console.log(this.data);
-
+        if(this.route.snapshot.params['qr']) {
+          this.mostrandoModal = 1
+        }
       });
     }
     this.audio.onended = () => {

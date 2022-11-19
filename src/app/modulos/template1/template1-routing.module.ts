@@ -13,7 +13,7 @@ const routes: Routes = [
     component: Misxv1Component
   },
   {
-    path: 'check',
+    path: ':id/:qr',
     component: Modal2Component,
   },
 ];
