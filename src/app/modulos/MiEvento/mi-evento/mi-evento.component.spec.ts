@@ -1,20 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Misxv1Component } from './misxv1.component';
+import { MiEventoComponent } from './mi-evento.component';
 
-describe('Misxv1Component', () => {
-  let component: Misxv1Component;
-  let fixture: ComponentFixture<Misxv1Component>;
+describe('MiEventoComponent', () => {
+  let component: MiEventoComponent;
+  let fixture: ComponentFixture<MiEventoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Misxv1Component ]
+      declarations: [ MiEventoComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(Misxv1Component);
+    fixture = TestBed.createComponent(MiEventoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

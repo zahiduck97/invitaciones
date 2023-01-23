@@ -1,14 +1,14 @@
-import {Component, ElementRef, ViewChild} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
+import {InvitadosService} from "../../../services/invitados.service";
 import jwtDecode, {JwtPayload} from "jwt-decode";
-import {InvitadosService} from "../../../../services/invitados.service";
 
 @Component({
-  selector: 'app-misxv1',
-  templateUrl: './misxv1.component.html',
-  styleUrls: ['./misxv1.component.scss']
+  selector: 'app-mi-evento',
+  templateUrl: './mi-evento.component.html',
+  styleUrls: ['./mi-evento.component.scss']
 })
-export class Misxv1Component {
+export class MiEventoComponent {
   @ViewChild("inicio") inicio: ElementRef;
   @ViewChild("datos") datos: ElementRef;
   @ViewChild("lugar") lugar: ElementRef;

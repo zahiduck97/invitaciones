@@ -3,7 +3,7 @@
   <div class="audio">
     <i *ngIf="!reproduciendo; else pausa" (click)="reproducir(1)" class="fa-solid fa-volume-high"></i>
     <ng-template #pausa>
-        <i (click)="reproducir(0)" class="fa-solid fa-stop crecer"></i>
+      <i (click)="reproducir(0)" class="fa-solid fa-stop crecer"></i>
     </ng-template>
   </div>
   <!------- Reproductor de Audio: Fin -------------->
@@ -23,6 +23,6 @@
   <app-modal2 (modal)="mostrarModal($event)" *ngIf="mostrandoModal" [escaneados]="data.escaneados"
               [totales]="data.numeroBoletos"></app-modal2>
 
-<!--  <app-publicidad></app-publicidad>-->
+  <!--  <app-publicidad></app-publicidad>-->
 </div>
 

@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {Misxv1Component} from "./components/misxv1/misxv1.component";
+import {MiEventoComponent} from "./mi-evento/mi-evento.component";
 
 const routes: Routes = [
   {
     path: ':id',
-    component: Misxv1Component
+    component: MiEventoComponent
   },
   {
     path: '',
-    component: Misxv1Component
+    component: MiEventoComponent
   },
   {
     path: ':id/:qr',
-    component: Misxv1Component,
+    component: MiEventoComponent,
   },
 ];
 
@@ -21,4 +21,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class Template1RoutingModule { }
+export class MiEventoRoutingModule { }
