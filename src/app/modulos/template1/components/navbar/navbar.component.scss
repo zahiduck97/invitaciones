@@ -1,3 +1,5 @@
+$color-titulo-nav: #d9ad62;
+$color-fondo-menu: #b98f48 ;
 .shrink {
   background: transparent !important;
   transition: all .5s;
@@ -19,6 +21,7 @@ nav {
   z-index: 999;
   transition: all .5s;
   pre{
+    color: $color-titulo-nav;
     font-family: 'lovecraft', 'Poppins', sans-serif;
     font-weight: 400;
     transition: all .5s;
@@ -45,7 +48,8 @@ nav {
     position: fixed;
     left: 0;
     width: 100vw;
-    background-image: url("../../../../../assets/fondo.jpg");
+    background-color: $color-fondo-menu;
+    // background-image: url("../../../../../assets/fondo.jpg");
     height: 100vh;
     clip-path: circle(150% at 100% 100%) ;
     transition: clip-path 0.5s ease;
@@ -66,7 +70,8 @@ nav {
     position: fixed;
     left: 0;
     width: 100vw;
-    background-image: url("../../../../../assets/fondo.jpg");
+    background-color: $color-fondo-menu;
+    // background-image: url("../../../../../assets/fondo.jpg");
     height: 100vh;
     clip-path: circle(0% at 100% 100%) ;
     transition: clip-path 0.5s ease;

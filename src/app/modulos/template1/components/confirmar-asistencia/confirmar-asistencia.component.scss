@@ -1,3 +1,7 @@
+$btn-canclear:#7d3747 ;
+$btnhover-canclear:#a96b76 ;
+$btn-confirmar:#65756f  ;
+$btnhover-confirmar: #96a298 ;
 section{
   width: 100%;
   height: 100vh;
@@ -26,7 +30,7 @@ section{
     cursor: pointer;
     color: white;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.659);
-    background-color: #cc210a
+    background-color:$btn-canclear
   }
   .confirmar{
     width: 40%;
@@ -37,13 +41,13 @@ section{
     cursor: pointer;
     color: white;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.659);
-    background-color: #0bc42a
+    background-color: $btn-confirmar;
   }
   .cancelar:hover{
-    background-color: #570f06;
+    background-color:$btnhover-canclear;
   }
   .confirmar:hover{
-    background-color: #055813;
+    background-color: $btnhover-confirmar;
   }
 }
 .btnContainer{

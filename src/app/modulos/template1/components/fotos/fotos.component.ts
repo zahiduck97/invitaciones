@@ -7,7 +7,7 @@ import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 })
 export class FotosComponent implements OnInit {
   @ViewChild("imgn") box: ElementRef;
-  imgArray: string[] = ['rueda','alas', 'extra', 'montaña', 'sombrilla'];
+  imgArray: string[] = ['rellenoboda','tamaño', 'rellenoboda', 'tamaño', 'rellenoboda'];
   index: number;
   currentSrc: string;
   constructor() {

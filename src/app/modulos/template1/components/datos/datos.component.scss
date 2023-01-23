@@ -1,3 +1,4 @@
+$color-fondo:  #96a298;
 section{
   width: 100%;
   height: 50vh;
@@ -11,8 +12,8 @@ section{
 // background-image: linear-gradient(152deg, #f0db9b 0%, #b19bc1 100%);
 
 background: #fceabb;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// background: -webkit-linear-gradient(to right, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+background: $color-fondo; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     // background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);;
     overflow: hidden;
@@ -31,7 +32,7 @@ background: linear-gradient(to right, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, F
     font-size: 2.9rem;
   }
   .texto2{
-    font-family: 'Luckiest Guy', sans-serif;
+    font-family: 'Laila', sans-serif;
     font-size: 3rem;
     text-align: center;
   }

@@ -1,3 +1,4 @@
+$color-letra:  #65756f ;
 section{
   width: 100%;
   height: 100vh;
@@ -34,9 +35,13 @@ section{
       font-size: 3rem;
     }
     span{
-      font-size: 5rem;
-      font-family: 'Luckiest Guy', cursive;
-      color: white;
+      font-size: 4rem;
+      text-align: center;
+
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.659);
+      font-family: 'Laila', cursive;
+      // font-family: 'Luckiest Guy', cursive;
+      color: $color-letra;
     }
   }
 }

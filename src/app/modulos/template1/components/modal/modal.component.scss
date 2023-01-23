@@ -1,3 +1,4 @@
+$btn-color:   #b98f48   ;
 .contenedor{
     position: fixed;
     width: 100vw;
@@ -19,7 +20,7 @@
             font-size: xx-large;
             width: 90%;
           border-radius: 15px;
-          background-color: #f8b500;
+          background-color:$btn-color;
           color: white;
         }
     }
