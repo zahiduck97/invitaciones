@@ -16,11 +16,11 @@ import { FotofinComponent } from './components/fotofin/fotofin.component';
 import { PublicidadComponent } from './components/publicidad/publicidad.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { QrComponent } from './components/qr/qr.component';
-import {ZXingScannerModule} from "@zxing/ngx-scanner";
-import {NgxQRCodeModule} from "@techiediaries/ngx-qrcode";
+// import {ZXingScannerModule} from "@zxing/ngx-scanner";
+// import {NgxQRCodeModule} from "@techiediaries/ngx-qrcode";
 import {FormsModule} from "@angular/forms";
 import { Modal2Component } from './components/modal2/modal2.component';
-import {NgxScannerQrcodeModule} from "ngx-scanner-qrcode";
+// import {NgxScannerQrcodeModule} from "ngx-scanner-qrcode";
 
 @NgModule({
 
@@ -46,10 +46,10 @@ import {NgxScannerQrcodeModule} from "ngx-scanner-qrcode";
   imports: [
     CommonModule,
     Template1RoutingModule,
-    ZXingScannerModule,
-    NgxQRCodeModule,
+    // ZXingScannerModule,
+    // NgxQRCodeModule,
     FormsModule,
-    NgxScannerQrcodeModule,
+    // NgxScannerQrcodeModule,
   ],
 })
 export class Template1Module { }
