@@ -48,8 +48,8 @@ nav {
     position: fixed;
     left: 0;
     width: 100vw;
-    background-color: $color-fondo-menu;
-    // background-image: url("../../../../../assets/fondo.jpg");
+    // background-color: $color-fondo-menu;
+    background-image: url("../../../../../assets/fondoBoda.jpg");
     height: 100vh;
     clip-path: circle(150% at 100% 100%) ;
     transition: clip-path 0.5s ease;
@@ -70,8 +70,8 @@ nav {
     position: fixed;
     left: 0;
     width: 100vw;
-    background-color: $color-fondo-menu;
-    // background-image: url("../../../../../assets/fondo.jpg");
+    // background-color: $color-fondo-menu;
+    background-image: url("../../../../../assets/fondoBoda.jpg");
     height: 100vh;
     clip-path: circle(0% at 100% 100%) ;
     transition: clip-path 0.5s ease;

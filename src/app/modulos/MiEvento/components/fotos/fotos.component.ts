@@ -7,7 +7,7 @@ import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 })
 export class FotosComponent implements OnInit {
   @ViewChild("imgn") box: ElementRef;
-  imgArray: string[] = ['rellenoboda','tamaño', 'rellenoboda', 'tamaño', 'rellenoboda'];
+  imgArray: string[] = ['novios1','novios2', 'novios3','novios5'];
   index: number;
   currentSrc: string;
   constructor() {
@@ -15,7 +15,7 @@ export class FotosComponent implements OnInit {
     this.currentSrc=`assets/${this.imgArray[this.index]}.jpg`;
   }
 
-  ngOnInit(): void { 
+  ngOnInit(): void {
     setInterval(() => this.delante(), 4000)
   }
   delante () {
