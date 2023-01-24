@@ -10,25 +10,8 @@
       <p><span class="remark">DIRECCIÓN:</span> Libra 39, Col. Estrella, 55210 Ecatepec de Morelos, Méx.</p>
       <button class="botonMapa" (click) ="mostrarModal(1)"> Ver mapa</button>
       <app-modal (modal)="mostrarModal($event)" [valor]="opcion" *ngIf="opcion === 1"></app-modal>
-      <!-- <div class="modal-overlay">
-        <div class="modal-content">
-          <div class="modal-header">
-            <a class="close-modal">✖</a><!-- close modal -->
-            <!-- <h4 class="modal-title">CEREMONIA RELIGIOSA</h4>
-          </div>
-          <div class="modal-body">
-            <div class="maps">
-              <iframe
-                class="mapa-pop"
-                height="300"
-                src="https://maps.google.com/maps?q=Iglesia%20de%20Nuestra%20Se%C3%B1ora%20de%20La%20Medalla%20Milagrosa%20La%20Estrella&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-              </iframe>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
+
     <div class="cards" >
       <span class="remark">SALÓN DE FIESTA</span>
       <img src="assets/salon.png">

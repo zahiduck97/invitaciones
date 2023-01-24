@@ -15,7 +15,7 @@ export class NavbarComponent implements AfterViewInit, OnInit{
     {titulo: 'DATOS', valor: "datos"},
     {titulo: 'LUGAR', valor: "lugar"},
     {titulo: 'FOTOS', valor: "fotos"},
-    {titulo: 'PERSONAS', valor: "personas"},
+    // {titulo: 'PERSONAS', valor: "personas"},
     {titulo: 'ASISTENCIA', valor: "asistencia"},
     {titulo: 'ACCESO', valor: "qr"},
     {titulo: 'CONTACTO', valor: "contacto"},

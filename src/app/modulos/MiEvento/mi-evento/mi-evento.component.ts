@@ -24,6 +24,7 @@ export class MiEventoComponent {
   audio = new Audio('assets/song.mp3');
   reproduciendo = 0;
   mostrandoModal = 0
+  modal= true;
 
 // si quieres vovler a abrir el modal luego de cerrarlo, refresca la pantalla
   constructor(
@@ -42,11 +43,15 @@ export class MiEventoComponent {
     this.audio.onended = () => {
       this.reproducir(0)
     };
-    this.reproducir(1);
   }
 
   opcion(opcion) {
     this[opcion.valor].nativeElement.scrollIntoView({behavior: "smooth", block: "start"});
+  }
+
+  cerrarModal() {
+    this.modal = false;
+    this.reproducir(1);
   }
 
   nuevoEstado(event) {
