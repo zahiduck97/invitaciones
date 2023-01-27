@@ -1,0 +1,39 @@
+section{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 3rem;
+  gap: 4rem;
+  h2{
+    text-align: center;
+    font-family: 'Laila', sans-serif;
+    font-size: 2.95rem;
+  }
+  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    max-height: 50vh;
+    align-items: center;
+    img{
+      width: 60%;
+    }
+    span{
+      font-size: larger;
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+}
+@media (max-width: 768px) {
+  section {
+    height: auto;
+    text-align: center;
+    div{
+      max-height: 100vh;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+$btn-canclear:#7d3747 ;
+$btnhover-canclear:#a96b76 ;
+$btn-confirmar:#65756f  ;
+$btnhover-confirmar: #96a298 ;
+section{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  background-color: rgba(56, 52, 52, 0.918);
+  color: white;
+  gap: 4rem;
+  h2{
+    text-align: center;
+    font-family: 'Laila', sans-serif;
+    font-size: 2.95rem;
+    }
+  h5, h3{
+    font-family: 'Poppins', sans-serif;
+  }
+  .cancelar{
+    width: 40%;
+    border: 5px;
+    border-radius: 1rem;
+    height: 2.45rem;
+    font-size: large;
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.659);
+    background-color:$btn-canclear
+  }
+  .confirmar{
+    width: 40%;
+    border: 5px;
+    border-radius: 1rem;
+    height: 2.45rem;
+    font-size: large;
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.659);
+    background-color: $btn-confirmar;
+  }
+  .cancelar:hover{
+    background-color:$btnhover-canclear;
+  }
+  .confirmar:hover{
+    background-color: $btnhover-confirmar;
+  }
+}
+.btnContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  align-items: center;
+  justify-content: center;
+    button{
+      width: 50%;
+      border: 5px;
+      border-radius: 1rem;
+      height: 2.45rem;
+      font-size: large;
+      cursor: pointer;
+      color: white;
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.659);
+      background-color: #f8b500
+    }
+
+    button:hover{
+      color:  #f8b500;
+      background-color: #fceabb;
+      border: .2rem solid #f8b500;
+    }
+}
+
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  gap: .5rem;
+  button{
+    border: 5px;
+    border-radius: .2rem;
+    height: 2.45rem;
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.659);
+    font-size: large;
+    background-color:  #f8b500;
+  }
+  button:hover{
+    color:  #f8b500;
+    background-color: #fceabb;
+    border: .2rem solid  #f8b500;
+  }
+}
+@keyframes moveInRigth {
+  0%{
+      opacity: 0;
+      // transform: translateX(100px);
+  }
+  60%{
+    opacity: .5;
+      // transform: translateX(-10px);
+  }
+  100%{
+      opacity: 1;
+      // transform: translate(0);
+  }
+}
+@media (max-width: 768px) {
+  section {
+    text-align: center;
+    h5, h3{
+      width: 80%;
+    }
+    .cancelar{
+      height: 3.5rem;
+    }
+    .confirmar{
+      height: 3.5rem;
+    }
+  }
+
+}

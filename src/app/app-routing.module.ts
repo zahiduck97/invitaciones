@@ -11,8 +11,8 @@ const routes: Routes = [
     loadChildren: () => import('./modulos/admin/admin.module').then(m => m.AdminModule),
   },
   {
-    path: 'misxv1',
-    loadChildren: () => import('./modulos/template1/template1.module').then(m => m.Template1Module),
+    path: 'miEvento',
+    loadChildren: () => import('./modulos/MiEvento/MiEvento.module').then(m => m.MiEventoModule),
   },
   {path: '**', redirectTo:'' },
 ];

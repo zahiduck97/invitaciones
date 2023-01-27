@@ -1,0 +1,32 @@
+<div *ngIf="data">
+  <!------- Modal Bienvenida: Inicio -------------->
+  <app-modal-bienvenida *ngIf="modal" (modal)="cerrarModal()"></app-modal-bienvenida>
+  <!------- Modal Bienvenida: Fin -------------->
+
+  <!------- Reproductor de Audio: Inicio -------------->
+  <div class="audio">
+    <i *ngIf="!reproduciendo; else pausa" (click)="reproducir(1)" class="fa-solid fa-volume-high"></i>
+    <ng-template #pausa>
+      <i (click)="reproducir(0)" class="fa-solid fa-stop crecer"></i>
+    </ng-template>
+  </div>
+  <!------- Reproductor de Audio: Fin -------------->
+
+  <app-navbar (opcion)="opcion($event)" [alias]="data.alias"></app-navbar>
+  <div #inicio><app-reloj-fondo [fecha]="data.fechaEvento"></app-reloj-fondo></div>
+  <div #datos><app-datos [nombre]="data.nombreInvitado" [boletos]="data.numeroBoletos" [mesa]="data.mesa"></app-datos></div>
+  <div #lugar><app-donde-cuando></app-donde-cuando></div>
+  <!-- <app-desscode></app-desscode> -->
+  <div #fotos><app-fotos></app-fotos></div>
+  <!-- <div #personas><app-personas></app-personas></div> -->
+  <div #asistencia><app-confirmar-asistencia [token]="token" (estadoAsistencia)="nuevoEstado($event)" [edoInvitacion]="data.idEstadoInvitacion"></app-confirmar-asistencia></div>
+  <!-- <div #qr><app-qr [token]="token"></app-qr></div> -->
+  <!-- <div #scanner><app-scanner-qr></app-scanner-qr></div> -->
+  <div #contacto><app-contacto></app-contacto></div>
+  <div #fin><app-fotofin></app-fotofin></div>
+  <app-modal2 (modal)="mostrarModal($event)" *ngIf="mostrandoModal" [escaneados]="data.escaneados"
+              [totales]="data.numeroBoletos"></app-modal2>
+
+  <!--  <app-publicidad></app-publicidad>-->
+</div>
+

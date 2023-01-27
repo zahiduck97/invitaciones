@@ -1,0 +1,51 @@
+$btn-color:   #b98f48   ;
+.contenedor{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  padding: 1.8rem;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.509);
+  z-index: 101;
+  .blank{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  #text{
+    text-align: center;
+  }
+  #centrar{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    button {
+      margin-top: 20px;
+      color: black;
+      font-weight: 800;
+      background: #d9ad62;
+      padding: 5px;
+      border-radius: 10px;
+      box-shadow:
+        inset 0 -3em 3em rgba(0,0,0,0.1),
+        0 0  0 2px rgb(255,255,255),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor{
+    iframe {
+      height: 460px;
+      width: 100%;
+    }
+
+  }
+
+}
+
