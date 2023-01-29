@@ -21,7 +21,7 @@ export class MiEventoComponent {
   @ViewChild("fin") fin: ElementRef;
   token = this.route.snapshot.params['id'];
   data;
-  audio = new Audio('assets/song.mp3');
+  audio = new Audio('assets/song2.mp3');
   reproduciendo = 0;
   mostrandoModal = 0
   modal= true;

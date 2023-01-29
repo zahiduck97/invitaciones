@@ -1,4 +1,4 @@
-$color-fondo:  #96a298;
+$color-fondo:  #eed9ad ;
 section{
   width: 100%;
   height: 50vh;
@@ -8,12 +8,13 @@ section{
   div{
     width: 100%;
     height: 100%;
-//     background-color: #f0db9b;
-// background-image: linear-gradient(152deg, #f0db9b 0%, #b19bc1 100%);
+    box-shadow: inset 0 0 90px #00000080;
+    background-image: url('../../../../../assets/fondo3.jpg');
+    // background-color: #f0db9b;
 
-background: #fceabb;  /* fallback for old browsers */
+// background: #fceabb;  /* fallback for old browsers */
 // background: -webkit-linear-gradient(to right, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
-background: $color-fondo; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// background: $color-fondo; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     // background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);;
     overflow: hidden;
@@ -28,16 +29,16 @@ background: $color-fondo; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 1
   }
   .texto1{
     text-align: center;
-    font-family: 'Laila', sans-serif;
+    font-family: 'Bad Script', sans-serif;
     font-size: 2.9rem;
   }
   .texto2{
-    font-family: 'Laila', sans-serif;
+    font-family: 'Bad Script', sans-serif;
     font-size: 3rem;
     text-align: center;
   }
   .texto3{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Bad Script', sans-serif;
     font-size: 2rem;
   }
   span{
