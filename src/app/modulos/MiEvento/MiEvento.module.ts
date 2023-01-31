@@ -21,6 +21,7 @@ import {FormsModule} from "@angular/forms";
 import {Modal2Component} from './components/modal2/modal2.component';
 import {MiEventoComponent} from './mi-evento/mi-evento.component';
 import { ModalBienvenidaComponent } from './components/modals/modal-bienvenida/modal-bienvenida.component';
+import { FraseComponent } from './components/frase/frase.component';
 
 // import {NgxScannerQrcodeModule} from "ngx-scanner-qrcode";
 
@@ -44,7 +45,8 @@ import { ModalBienvenidaComponent } from './components/modals/modal-bienvenida/m
     QrComponent,
     Modal2Component,
     MiEventoComponent,
-    ModalBienvenidaComponent
+    ModalBienvenidaComponent,
+    FraseComponent
   ],
   imports: [
     CommonModule,

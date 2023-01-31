@@ -14,6 +14,7 @@
 
   <app-navbar (opcion)="opcion($event)" [alias]="data.alias"></app-navbar>
   <div #inicio><app-reloj-fondo [fecha]="data.fechaEvento"></app-reloj-fondo></div>
+  <div #frase><app-frase></app-frase> </div>
   <div #datos><app-datos [nombre]="data.nombreInvitado" [boletos]="data.numeroBoletos" [mesa]="data.mesa"></app-datos></div>
   <div #lugar><app-donde-cuando></app-donde-cuando></div>
   <!-- <app-desscode></app-desscode> -->

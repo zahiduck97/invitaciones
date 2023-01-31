@@ -19,9 +19,10 @@ export class MiEventoComponent {
   @ViewChild("scanner") scanner: ElementRef;
   @ViewChild("contacto") contacto: ElementRef;
   @ViewChild("fin") fin: ElementRef;
+  @ViewChild("frase") frase: ElementRef;
   token = this.route.snapshot.params['id'];
   data;
-  audio = new Audio('assets/song2.mp3');
+  audio = new Audio('assets/song.mp3');
   reproduciendo = 0;
   mostrandoModal = 0
   modal= true;
