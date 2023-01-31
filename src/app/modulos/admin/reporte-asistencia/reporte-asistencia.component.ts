@@ -61,6 +61,7 @@ export class ReporteAsistenciaComponent {
 
 
   toggle(index: number) {
+    console.log('entro')
     // Cierra Demas pestañas si no se puede multi
     if (!this.options.multi) {
       this.menus.filter(

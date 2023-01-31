@@ -10,7 +10,7 @@
         </div>
       </div>
       <ul class="submenu" #submenu *ngIf="menu.request"
-          [style.height.px]="menu.active ? submenu.scrollHeight : 0">
+          [style.height.px]="menu.active ? 210 : 0">
         <li *ngFor="let submenu of menu.submenu">
           <a [href]="submenu.url">{{ submenu.nombreInvitado }}</a>
         </li>
