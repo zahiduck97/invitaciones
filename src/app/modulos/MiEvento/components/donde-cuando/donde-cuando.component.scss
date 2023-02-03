@@ -1,4 +1,4 @@
-$color-titulo:   #a96b76  ;
+$color-titulo:   #c8a476   ;
 section{
   width: 100%;
   height: 120.5vh;
@@ -6,12 +6,12 @@ section{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 3rem;
+  padding: 3rem 0;
   gap: 4rem;
   h2{
     color: $color-titulo;
     text-align: center;
-    font-family: 'Laila', sans-serif;
+    font-family: 'Parisienne', sans-serif;
     font-size: 2.95rem;
   }
 }
@@ -32,6 +32,11 @@ section{
     flex-direction: column;
     .remark{
       font-weight: 550;
+      // text-align: center;
+    }
+    .remark-titulo{
+      font-weight: bold;
+      font-size: 20px;
       // text-align: center;
     }
     span{
