@@ -6,7 +6,7 @@ section{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 3rem;
+  padding: 3rem 0;
   gap: 4rem;
   h2{
     color: $color-titulo;
@@ -32,6 +32,11 @@ section{
     flex-direction: column;
     .remark{
       font-weight: 550;
+      // text-align: center;
+    }
+    .remark-titulo{
+      font-weight: bold;
+      font-size: 20px;
       // text-align: center;
     }
     span{

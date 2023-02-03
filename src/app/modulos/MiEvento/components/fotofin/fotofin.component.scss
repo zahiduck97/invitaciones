@@ -47,7 +47,9 @@ section{
     background-color: transparent;
     color: white;
     padding: 10px;
-    text-shadow: 2px 2px black
+    bottom: -337px;
+    position: relative;
+    text-shadow: 2px 2px black;
   };
 }
 @keyframes moveInRigth {
@@ -70,13 +72,13 @@ section{
       width: 85%;
       right:calc((100% - 85%) / 2 );
       .xv{
-        font-size: 3rem;
+        font-size: 2rem;
       }
       .nombre{
         font-size: 1.3rem;
       }
       span{
-        font-size: 1.31rem;
+        font-size: 3rem;
         line-height: 2.5rem;
       }
     }
