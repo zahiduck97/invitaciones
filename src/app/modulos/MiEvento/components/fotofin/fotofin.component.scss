@@ -1,12 +1,13 @@
 section{
   width: 100%;
-  height: 100vh;
+  //height: 100vh;
   // background-color: green;
   position: relative;
   overflow: hidden;
   .img-container{
     width: 100%;
-    height: 100vh;
+    //height: 100vh;
+    height: 43vh;
 
     img{
       width: 100%;
@@ -28,14 +29,6 @@ section{
     align-items: center;
     text-align: center;
     align-content: center;
-    .xv{
-      font-size: 6rem;
-    }
-    .nombre{
-      margin-top: 10px;
-      font-family: 'Poppins', sans-serif;
-      font-size: 3rem;
-    }
     span{
       font-size: 2.5rem;
       font-family: 'Bad Script', sans-serif;
@@ -47,7 +40,7 @@ section{
     background-color: transparent;
     color: white;
     padding: 10px;
-    bottom: -337px;
+    //bottom: -337px;
     position: relative;
     text-shadow: 2px 2px black;
   };
@@ -71,14 +64,11 @@ section{
     .reloj{
       width: 85%;
       right:calc((100% - 85%) / 2 );
-      .xv{
-        font-size: 2rem;
-      }
       .nombre{
         font-size: 1.3rem;
       }
       span{
-        font-size: 3rem;
+        font-size: 2.3rem;
         line-height: 2.5rem;
       }
     }

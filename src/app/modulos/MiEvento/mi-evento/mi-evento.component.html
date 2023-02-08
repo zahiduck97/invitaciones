@@ -15,17 +15,17 @@
   <app-navbar (opcion)="opcion($event)" [alias]="data.alias"></app-navbar>
   <div #inicio><app-reloj-fondo [fecha]="data.fechaEvento"></app-reloj-fondo></div>
   <div #frase><app-frase></app-frase> </div>
-  <div #fotos><app-fotos></app-fotos></div>
+  <div #fotos><app-fotos [fin]="3" [extension]="'jpeg'"></app-fotos></div>
   <div #lugar><app-donde-cuando></app-donde-cuando></div>
   <div #datos><app-datos [nombre]="data.nombreInvitado" [boletos]="data.numeroBoletos" [mesa]="data.mesa"></app-datos></div>
   <div #fraseRegalo><app-frase-regalo></app-frase-regalo> </div>
-  <div #contacto><app-contacto></app-contacto></div>
+  <div #contacto><app-contacto [contacto1]="data.contacto1" [numero1]="data.numero1" [contacto2]="data.contacto2" [numero2]="data.numero2"></app-contacto></div>
   <!-- <app-desscode></app-desscode> -->
   <!-- <div #personas><app-personas></app-personas></div> -->
   <div #asistencia><app-confirmar-asistencia [token]="token" (estadoAsistencia)="nuevoEstado($event)" [edoInvitacion]="data.idEstadoInvitacion"></app-confirmar-asistencia></div>
   <div #qr><app-qr [token]="token"></app-qr></div>
   <!-- <div #scanner><app-scanner-qr></app-scanner-qr></div> -->
-  <div #fin><app-fotofin></app-fotofin></div>
+  <div #fin><app-fotofin [inicio]="4" [fin]="6" [extension]="'jpeg'"></app-fotofin></div>
   <app-modal2 (modal)="mostrarModal($event)" *ngIf="mostrandoModal" [escaneados]="data.escaneados"
               [totales]="data.numeroBoletos"></app-modal2>
 

@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import {Component, OnInit, ElementRef, ViewChild, Input} from '@angular/core';
 
 @Component({
   selector: 'app-fotos',
@@ -7,15 +7,22 @@ import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 })
 export class FotosComponent implements OnInit {
   @ViewChild("imgn") box: ElementRef;
-  imgArray: string[] = ['novios1','novios2', 'novios3','novios5'];
-  index: number;
+  @Input() fin: number;
+  @Input() extension: string;
+  imgArray: string[] = [];
+  index: number = 0;
   currentSrc: string;
   constructor() {
-    this.index= 0;
-    this.currentSrc=`assets/${this.imgArray[this.index]}.jpg`;
   }
 
   ngOnInit(): void {
+    // creando arreglo de imagenes dinámico
+    for (let i = 1; i <= this.fin; i++) {
+      this.imgArray.push(`foto${i}`)
+    }
+    console.log(this.imgArray)
+
+    this.currentSrc = `assets/${this.imgArray[0]}.${this.extension}`;
     setInterval(() => this.delante(), 4000)
   }
   delante () {
@@ -23,7 +30,7 @@ export class FotosComponent implements OnInit {
     // this.box.nativeElement.style.transition = 'all 0.2s ease-in-out'
     setTimeout(() => {
       this.index = this.index >= this.imgArray.length -1 ? 0 : this.index + 1;
-    this.currentSrc = `assets/${this.imgArray[this.index]}.jpg`;
+    this.currentSrc = `assets/${this.imgArray[this.index]}.jpeg`;
     }, 130);
     setTimeout(() => {
       this.box.nativeElement.style.opacity = '0.6'
