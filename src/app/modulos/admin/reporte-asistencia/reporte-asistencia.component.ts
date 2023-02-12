@@ -11,35 +11,7 @@ export class ReporteAsistenciaComponent {
   options = { multi: false };
   isLoading = true
 
-  menus: any[] = [
-    // {
-    //   name: "Front-end",
-    //   active: true,
-    //   submenu: [
-    //     { name: "HTML", url: "#" },
-    //     { name: "CSS", url: "#" },
-    //     { name: "Javascript", url: "#" }
-    //   ]
-    // },
-    // {
-    //   name: "Responsive web",
-    //   active: false,
-    //   submenu: [
-    //     { name: "Tablets", url: "#" },
-    //     { name: "Mobiles", url: "#" },
-    //     { name: "Desktop", url: "#" }
-    //   ]
-    // },
-    // {
-    //   name: "Web Browser",
-    //   active: false,
-    //   submenu: [
-    //     { name: "Chrome", url: "#" },
-    //     { name: "Firefox", url: "#" },
-    //     { name: "Desktop", url: "#" }
-    //   ]
-    // }
-  ];
+  menus: any[] = [];
 
   constructor(
     private reporteService: ReporteService
