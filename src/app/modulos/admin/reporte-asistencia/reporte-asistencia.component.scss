@@ -105,16 +105,17 @@ h1 {
   border-bottom: 0;
 }
 
-.submenu a {
-  display: block;
+.submenu p {
   text-decoration: none;
   color: #d9d9d9;
   padding: 12px;
   padding-left: 42px;
   transition: all 0.25s ease-in-out;
+  display: flex;
+  justify-content: space-between;
 }
 
-.submenu a:hover {
+.submenu p:hover {
   background: #b63b4d;
   color: #fff;
 }

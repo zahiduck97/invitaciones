@@ -11,10 +11,10 @@ export class ReporteService {
   constructor(private http: HttpClient) { }
 
   getReporteGeneral(): Observable<any>{
-    return this.http.get<any>(this.url + '/1');
+    return this.http.get<any>(this.url + '/2');
   }
 
   getReporteIndividual(value): Observable<any> {
-    return this.http.get(`${this.url}/invitados/1/${value}`);
+    return this.http.get(`${this.url}/invitados/2/${value}`);
   }
 }

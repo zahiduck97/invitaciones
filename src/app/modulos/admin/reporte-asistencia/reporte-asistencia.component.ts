@@ -27,6 +27,7 @@ export class ReporteAsistenciaComponent {
           submenu: []
         })
       }
+      console.log(this.menus)
       this.isLoading = false;
     })
   }
@@ -48,6 +49,13 @@ export class ReporteAsistenciaComponent {
         console.log(this.menus[index].submenu)
         this.menus[index].request = true;
       })
+    }
+  }
+
+  contactame(valor, num) {
+    if (valor === 0) {
+      const texto = `https://wa.me/${num}`
+      window.location.href= texto
     }
   }
 }
