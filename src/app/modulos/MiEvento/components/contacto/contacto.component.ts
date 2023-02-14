@@ -45,4 +45,11 @@ export class ContactoComponent implements OnInit{
       element.bottom > (window.innerHeight || document.documentElement.clientHeight) && element.top > window.innerHeight/1.7
     )
   }
+
+  myFunc(numero) {
+    const num = numero == 1 ? this.numero1 : this.numero2;
+    const texto = `https://wa.me/${num}`
+    console.log(num, texto)
+    window.location.href= texto
+  }
 }
