@@ -22,7 +22,7 @@ import {Modal2Component} from './components/modal2/modal2.component';
 import {MiEventoComponent} from './mi-evento/mi-evento.component';
 import { ModalBienvenidaComponent } from './components/modals/modal-bienvenida/modal-bienvenida.component';
 import { FraseComponent } from './components/frase/frase.component';
-import {NgxQRCodeModule} from "@techiediaries/ngx-qrcode";
+// import {NgxQRCodeModule} from "@techiediaries/ngx-qrcode";
 import { ScannerComponent } from './components/scanner/scanner.component';
 import { FraseRegaloComponent } from './components/frase-regalo/frase-regalo.component';
 
@@ -59,7 +59,7 @@ import { FraseRegaloComponent } from './components/frase-regalo/frase-regalo.com
     // ZXingScannerModule,
     // NgxQRCodeModule,
     FormsModule,
-    NgxQRCodeModule,
+    // NgxQRCodeModule,
     // NgxScannerQrcodeModule,
   ],
 })

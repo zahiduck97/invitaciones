@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PublicidadComponent implements OnInit {
 
   constructor() { }
-
+  numero1 = "+5215526935026"
   ngOnInit(): void {
   }
 

@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {NgxQrcodeElementTypes, NgxQrcodeErrorCorrectionLevels} from "@techiediaries/ngx-qrcode";
+// import {NgxQrcodeElementTypes, NgxQrcodeErrorCorrectionLevels} from "@techiediaries/ngx-qrcode";
 import {ActivatedRoute} from "@angular/router";
 import jwtDecode, {JwtPayload} from "jwt-decode";
 import {InvitadosService} from "../../../../services/invitados.service";
@@ -12,8 +12,8 @@ import {InvitadosService} from "../../../../services/invitados.service";
 
 export class QrComponent implements OnInit {
   @Input() token
-  elementType = NgxQrcodeElementTypes.URL;
-  correctionLevel = NgxQrcodeErrorCorrectionLevels.HIGH;
+  // elementType = NgxQrcodeElementTypes.URL;
+  // correctionLevel = NgxQrcodeErrorCorrectionLevels.HIGH;
   value;
   data;
   color = '#d0964a'
