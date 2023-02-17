@@ -1,8 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-// import {NgxQrcodeElementTypes, NgxQrcodeErrorCorrectionLevels} from "@techiediaries/ngx-qrcode";
 import {ActivatedRoute} from "@angular/router";
-import jwtDecode, {JwtPayload} from "jwt-decode";
-import {InvitadosService} from "../../../../services/invitados.service";
+import {NgxQrcodeElementTypes, NgxQrcodeErrorCorrectionLevels} from "@techiediaries/ngx-qrcode";
 
 @Component({
   selector: 'app-qr',
@@ -12,8 +10,8 @@ import {InvitadosService} from "../../../../services/invitados.service";
 
 export class QrComponent implements OnInit {
   @Input() token
-  // elementType = NgxQrcodeElementTypes.URL;
-  // correctionLevel = NgxQrcodeErrorCorrectionLevels.HIGH;
+  elementType = NgxQrcodeElementTypes.URL;
+  correctionLevel = NgxQrcodeErrorCorrectionLevels.HIGH;
   value;
   data;
   color = '#d0964a'
@@ -21,16 +19,12 @@ export class QrComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private invitadosSevice: InvitadosService,
   ) { }
 
   ngOnInit(): void {
-
-    if( this.token) {
-      this.invitadosSevice.updateVisualizacion(this.token).subscribe(data => {
-        this.data = jwtDecode<JwtPayload>(data.data);
-        this.value = `http://invitaciones-test.s3-website-us-east-1.amazonaws.com/#/misxv1/${this.token}/1`
-      });
-    }
+    const {id} = this.route.snapshot.params
+    console.log(id)
+    this.value = `https://blancaysalvador.digitalservicemaz.com/miEvento/${id}`
+    // this.value = id
   }
 }

@@ -23,8 +23,8 @@
   <!-- <app-desscode></app-desscode> -->
   <!-- <div #personas><app-personas></app-personas></div> -->
   <div #asistencia><app-confirmar-asistencia [token]="token" (estadoAsistencia)="nuevoEstado($event)" [edoInvitacion]="data.idEstadoInvitacion"></app-confirmar-asistencia></div>
-  <!-- <div #qr><app-qr [token]="token"></app-qr></div> -->
-  <!-- <div #scanner><app-scanner-qr></app-scanner-qr></div> -->
+<!--  <div #qr><app-qr></app-qr></div>-->
+<!--  <div #scanner><app-scanner></app-scanner></div>-->
   <div #fin><app-fotofin [inicio]="4" [fin]="6" [extension]="'jpeg'"></app-fotofin></div>
   <app-modal2 (modal)="mostrarModal($event)" *ngIf="mostrandoModal" [escaneados]="data.escaneados"
               [totales]="data.numeroBoletos"></app-modal2>
