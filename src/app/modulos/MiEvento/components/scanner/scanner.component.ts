@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-scanner',
   templateUrl: './scanner.component.html',
@@ -7,9 +6,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScannerComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    // public stream: MediaStream,
+  ) { }
 
   ngOnInit(): void {
   }
+
+  // async startCamera() {
+  //   try {
+  //     this.stream = await navigator.mediaDevices.getUserMedia({ video: true });
+  //   } catch (err) {
+  //     console.log("Error al obtener acceso a la cámara", err);
+  //   }
+  // }
+  // stopCamera() {
+  //   this.stream.getTracks().forEach(track => track.stop());
+  // }
 
 }

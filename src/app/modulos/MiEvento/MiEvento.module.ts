@@ -15,18 +15,14 @@ import {FotofinComponent} from './components/fotofin/fotofin.component';
 import {PublicidadComponent} from './components/publicidad/publicidad.component';
 import {ModalComponent} from './components/modal/modal.component';
 import {QrComponent} from './components/qr/qr.component';
-// import {ZXingScannerModule} from "@zxing/ngx-scanner";
-// import {NgxQRCodeModule} from "@techiediaries/ngx-qrcode";
 import {FormsModule} from "@angular/forms";
 import {Modal2Component} from './components/modal2/modal2.component';
 import {MiEventoComponent} from './mi-evento/mi-evento.component';
 import { ModalBienvenidaComponent } from './components/modals/modal-bienvenida/modal-bienvenida.component';
 import { FraseComponent } from './components/frase/frase.component';
-// import {NgxQRCodeModule} from "@techiediaries/ngx-qrcode";
 import { ScannerComponent } from './components/scanner/scanner.component';
 import { FraseRegaloComponent } from './components/frase-regalo/frase-regalo.component';
-
-// import {NgxScannerQrcodeModule} from "ngx-scanner-qrcode";
+import {NgxQRCodeModule} from "@techiediaries/ngx-qrcode";
 
 @NgModule({
 
@@ -56,11 +52,8 @@ import { FraseRegaloComponent } from './components/frase-regalo/frase-regalo.com
   imports: [
     CommonModule,
     MiEventoRoutingModule,
-    // ZXingScannerModule,
-    // NgxQRCodeModule,
     FormsModule,
-    // NgxQRCodeModule,
-    // NgxScannerQrcodeModule,
+    NgxQRCodeModule,
   ],
 })
 export class MiEventoModule {
