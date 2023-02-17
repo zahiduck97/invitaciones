@@ -1,5 +1,20 @@
-p{
-  margin: 1rem;
-  font-family: 'Bad Script';
-  text-align: center;
+section {
+  background: rgb(255,255,255);
+  background: linear-gradient(rgba(255,255,255,1) 21%, rgba(252,251,232,1) 100%);
+  padding: 20px 5px;
+
+  .text-container {
+    p{
+      padding: 1rem;
+      font-family: 'Bad Script';
+      text-align: center;
+    }
+  }
+
+  .img-container {
+    text-align: center;
+    img {
+      width: 250px;
+    }
+  }
 }
