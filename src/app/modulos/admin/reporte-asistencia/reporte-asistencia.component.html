@@ -12,7 +12,7 @@
           [style.height.px]="menu.active ? 210 : 0">
         <li *ngFor="let submenu of menu.submenu">
 <!--          <a [href]="submenu.url">{{ submenu.nombreInvitado }}</a>-->
-          <p (click)="contactame(menu.value, submenu.whatsapp)"><span>{{ submenu.nombreInvitado }}</span> <span>{{ submenu.whatsapp }}</span></p>
+          <p (click)="contactame(menu.value, submenu.whatsapp)"><span>{{ submenu.nombreInvitado }}</span> <span>{{ submenu.numeroBoletos }}</span></p>
         </li>
       </ul>
     </li>

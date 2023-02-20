@@ -8,10 +8,6 @@ const routes: Routes = [
     redirectTo: '/admin',
     pathMatch: 'full'
   },
-  // {
-  //   path: '',
-  //   loadChildren: () => import('./modulos/landing/landing.module').then(m => m.LandingModule),
-  // },
   {
     path: 'admin',
     loadChildren: () => import('./modulos/admin/admin.module').then(m => m.AdminModule),
