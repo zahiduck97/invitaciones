@@ -2,25 +2,14 @@
   <h2>Dónde & Cuándo</h2>
   <div class="cardsConteiner" #cardsContainer>
     <div class="cards">
-      <span class="remark-titulo">CEREMONIA RELIGIOSA</span>
+      <span class="remark-titulo">MI FIESTA</span>
       <!--<img src="assets/misa.png">-->
-      <span class="remark">PARROQUIA DE SAN SALVADOR DE LAS FLORES</span>
-      <p><span class="remark">CUANDO:</span> 18 de marzo</p>
-      <p><span class="remark">HORA:</span> 17:45 hrs.</p>
-      <p><span class="remark">DIRECCIÓN:</span> Calz de los Gallos 63, Plutarco Elías Calles, Miguel Hidalgo, 11350 CDMX</p>
+      <span class="remark">SERÁ EN MI CASA, QUE ESTÁ LLENA DE RISAS, AMOR Y DIVERSIÓN</span>
+      <p><span class="remark">CUANDO:</span> 21 de mayo</p>
+      <p><span class="remark">HORA:</span> 15:00 hrs.</p>
+      <p><span class="remark">DIRECCIÓN:</span> Corregidora, San Juan, 54668 Coyotepec, Méx.</p>
       <button class="botonMapa" (click) ="mostrarModal(1)"> Ver mapa</button>
       <app-modal (modal)="mostrarModal($event)" [valor]="opcion" *ngIf="opcion === 1"></app-modal>
-    </div>
-
-    <div class="cards" >
-      <span class="remark-titulo">SALÓN DE FIESTA</span>
-      <!--<img src="assets/salon.png">-->
-      <span class="remark">SALÓN DE FIESTAS CENTENARIO (SALÓN 1)</span>
-      <p><span class="remark">CUANDO:</span> 18 de marzo</p>
-      <p><span class="remark">HORA:</span> 20:30 hrs.</p>
-      <p><span class="remark">DIRECCIÓN:</span> Av. Centenario 367, Nextengo, Azcapotzalco, 02070 CDMX</p>
-      <button class="botonMapa" (click) ="mostrarModal(2)"> Ver mapa</button>
-      <app-modal (modal)="mostrarModal($event)" [valor]="opcion" *ngIf="opcion === 2"></app-modal>
     </div>
   </div>
   <!--<h2 class="fotos">Fotos</h2>-->

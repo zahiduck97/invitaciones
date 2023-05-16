@@ -1,5 +1,5 @@
-$btn-color:   #b98f48   ;
-.contenedor{
+$btn-color:   #b98f48;
+.slide-container{
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -24,10 +24,10 @@ $btn-color:   #b98f48   ;
     width: 100%;
     justify-content: space-around;
     button {
-      margin-top: 20px;
-      color: black;
+      margin: 20px;
+      color: #ffffff;
       font-weight: 800;
-      background: #d9ad62;
+      background: #7ad5d5;
       padding: 5px;
       border-radius: 10px;
       box-shadow:
@@ -39,7 +39,7 @@ $btn-color:   #b98f48   ;
 }
 
 @media (max-width: 480px) {
-  .contenedor{
+  .slide-container{
     iframe {
       height: 460px;
       width: 100%;
@@ -49,3 +49,69 @@ $btn-color:   #b98f48   ;
 
 }
 
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+$border-radius-size: 14px;
+$barbarian: #EC9B3B;
+$archer: #EE5487;
+$giant: #F6901A;
+$goblin: #82BB30;
+$wizard: #4FACFF;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+
+  background-size: cover;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  color: #9E9E9E;
+  margin-top: 30px;
+}
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+
+
+.clash-card {
+  background: white;
+  width: 300px;
+  margin: auto;
+  border-radius: $border-radius-size + 5;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+
+.clash-card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: $border-radius-size;
+  border-top-right-radius: $border-radius-size;
+}
+
+.clash-card__imagen {
+  background: url('https://i.pinimg.com/564x/8c/a2/2d/8ca22d4d723cffcdcdfed8747a149735.jpg');
+  img {
+    //width: 410px;
+    //position: absolute;
+    //top: -115px;
+    //left: -63px;
+    width: 440px;
+    position: absolute;
+    top: -134px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -18,6 +18,7 @@ export class RelojFondoComponent implements OnInit {
 
   ngOnInit(): void {
     this.fechaHoy = new Date();
+    console.log(this.fechaHoy)
     this.fechaEvento = new Date(this.fecha).setTime(new Date(this.fecha).getTime() + 5 * 60 * 60 * 1000);
     this.segundosEvento  = Math.abs(this.fechaEvento - this.fechaHoy) / 1000;
     this.diasEvento = Math.floor(this.segundosEvento / 86400);

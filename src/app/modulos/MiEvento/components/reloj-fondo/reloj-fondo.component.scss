@@ -1,4 +1,4 @@
-$color-letra:  #1c1e1ea9 ;
+$color-letra: #ffff ;
 section{
   width: 100%;
   height: 100vh;
@@ -39,9 +39,9 @@ section{
       font-size: 4rem;
       text-align: center;
 
-      // text-shadow: 2px 2px rgba(0, 0, 0, 0.659);
-      font-family: 'Parisienne', cursive;
-      // font-family: 'Luckiest Guy', cursive;
+       text-shadow: 2px 2px rgba(0, 0, 0, 0.659);
+      //font-family: 'Parisienne', cursive;
+       font-family: 'Luckiest Guy', cursive;
       color: $color-letra;
     }
   }
