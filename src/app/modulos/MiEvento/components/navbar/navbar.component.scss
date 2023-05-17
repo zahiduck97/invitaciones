@@ -10,7 +10,7 @@ $color-fondo-menu: #b98f48 ;
 }
 nav {
   width: 100%;
-  background-color: #7ad5d5;
+  background-color: #437764;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -49,7 +49,7 @@ nav {
     left: 0;
     width: 100vw;
     // background-color: $color-fondo-menu;
-    background-image: url("../../../../../assets/fondoBoda.jpg");
+    background-image: url("https://i.pinimg.com/564x/35/71/71/35717131eef8a6f36ff4d92ffce0db46.jpg");
     height: 100vh;
     clip-path: circle(150% at 100% 100%) ;
     transition: clip-path 0.5s ease;
@@ -71,7 +71,7 @@ nav {
     left: 0;
     width: 100vw;
     // background-color: $color-fondo-menu;
-    background-image: url("../../../../../assets/fondoBoda.jpg");
+    background-image: url("https://i.pinimg.com/564x/35/71/71/35717131eef8a6f36ff4d92ffce0db46.jpg");
     height: 100vh;
     clip-path: circle(0% at 100% 100%) ;
     transition: clip-path 0.5s ease;
