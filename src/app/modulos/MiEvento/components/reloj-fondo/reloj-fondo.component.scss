@@ -15,13 +15,13 @@ section{
     }
   }
   .reloj{
-    width: 80%;
+    width: 100%;
     height: 60%;
     // background-color: blue;
     position: absolute;
     bottom: 14rem;
     top: 7rem;
-    right:calc((100% - 70%) / 2 );
+    //right:calc((100% - 70%) / 2 );
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,6 +29,7 @@ section{
     // transform: translate(-50%, -50%);
     animation-name: moveInLeft;
     animation-duration: 3s;
+    padding: 66px;
     .xv{
       font-size: 7rem;
     }
@@ -62,10 +63,10 @@ section{
 @media (max-width: 768px) {
   section {
     .reloj{
-      width: 80%;
+      width: 100%;
       bottom: 0;
       height: 50%;
-      right:calc((100% - 80%) / 2 );
+      //right:calc((100% - 80%) / 2 );
       .xv{
         font-size: 6rem;
       }

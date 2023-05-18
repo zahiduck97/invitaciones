@@ -4,3 +4,21 @@
   padding: 0;
   margin: 0;
 }
+//
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #ccc;
+}
+.container {
+  max-width: 800px; /* Ancho de un celular típico */
+  width: 100%;
+  height: 100%; /* Alto de un celular típico */
+  overflow: auto;
+  overflow-y: scroll;
+  //overflow-y: hidden;
+}
+

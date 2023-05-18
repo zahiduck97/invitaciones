@@ -3,8 +3,8 @@ section {
   background: linear-gradient(rgb(123 163 180) 36%, rgb(255, 255, 255) 100%);
 
   .text-container {
+    padding: 2rem 10rem;
     p{
-      padding: 1rem;
       font-family: 'Bad Script';
       text-align: center;
     }
@@ -16,4 +16,13 @@ section {
       width: 250px;
     }
   }
+}
+
+@media (max-width: 480px) {
+  section {
+    .text-container {
+      padding: 2rem;
+    }
+  }
+
 }
