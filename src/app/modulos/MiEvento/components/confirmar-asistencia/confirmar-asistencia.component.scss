@@ -10,7 +10,7 @@ section{
   justify-content: center;
   align-items: center;
   padding-top: 3rem;
-  background-color: rgba(56, 52, 52, 0.918);
+  background-image: url("https://i.pinimg.com/564x/2b/9e/9b/2b9e9b67f7b88e503ce693dce1ae4848.jpg");
   color: white;
   gap: 4rem;
   h2{
@@ -66,13 +66,13 @@ section{
       cursor: pointer;
       color: white;
       text-shadow: 1px 1px rgba(0, 0, 0, 0.659);
-      background-color: #f8b500
+      background-color: #437764
     }
 
     button:hover{
-      color:  #f8b500;
+      color:  #437764;
       background-color: #fceabb;
-      border: .2rem solid #f8b500;
+      border: .2rem solid #437764;
     }
 }
 
@@ -91,7 +91,7 @@ form{
     color: white;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.659);
     font-size: large;
-    background-color:  #f8b500;
+    background-color:  #437764;
   }
   button:hover{
     color:  #f8b500;

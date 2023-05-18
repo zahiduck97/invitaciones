@@ -19,6 +19,7 @@ export class FotosComponent implements OnInit {
     // creando arreglo de imagenes dinámico
     for (let i = 1; i <= this.fin; i++) {
       this.imgArray.push(`foto${i}`)
+      console.log(this.imgArray, "array")
     }
     console.log(this.imgArray)
 
@@ -30,7 +31,7 @@ export class FotosComponent implements OnInit {
     // this.box.nativeElement.style.transition = 'all 0.2s ease-in-out'
     setTimeout(() => {
       this.index = this.index >= this.imgArray.length -1 ? 0 : this.index + 1;
-    this.currentSrc = `assets/${this.imgArray[this.index]}.jpeg`;
+    this.currentSrc = `assets/${this.imgArray[this.index]}.jpg`;
     }, 130);
     setTimeout(() => {
       this.box.nativeElement.style.opacity = '0.6'

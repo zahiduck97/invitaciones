@@ -59,7 +59,7 @@ export class FotofinComponent implements OnInit{
     this.img.nativeElement.style.opacity = '0.3'
     setTimeout(() => {
       this.index = this.index >= this.imgArray.length -1 ? 0 : this.index + 1;
-      this.currentSrc = `assets/${this.imgArray[this.index]}.jpeg`;
+      this.currentSrc = `assets/${this.imgArray[this.index]}.jpg`;
     }, 130);
     setTimeout(() => {
       this.img.nativeElement.style.opacity = '0.6'
