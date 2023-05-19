@@ -1,12 +1,9 @@
 section{
   width: 100%;
-  //height: 100vh;
-  // background-color: green;
   position: relative;
   overflow: hidden;
   .img-container{
     width: 100%;
-    //height: 100vh;
     height: 43vh;
 
     img{
@@ -18,10 +15,8 @@ section{
   .reloj{
     width: 73%;
     height: 42%;
-    // background-color: blue;
     position: absolute;
     bottom: 3rem;
-    //top: 5rem;
     right:calc((100% - 70%) / 2 );
     display: flex;
     flex-direction: column;
@@ -80,7 +75,10 @@ section{
 @media (max-width: 480px) {
   section {
     .reloj{
-      bottom: 0;
+      span{
+        font-size: 2rem;
+        line-height: 2rem;
+      }
     }
 
   }

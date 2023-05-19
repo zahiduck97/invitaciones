@@ -30,13 +30,15 @@ export class FotofinComponent implements OnInit{
 
   ngOnInit() {
     // creando arreglo de imagenes dinámico
-    for (let i = this.inicio; i <= this.fin; i++) {
-      this.imgArray.push(`foto${i}`)
-    }
-    console.log(this.imgArray)
+    // for (let i = this.inicio; i <= this.fin; i++) {
+    //   this.imgArray.push(`foto${i}`)
+    // }
+    // console.log(this.imgArray)
+    //
+    // this.currentSrc = `assets/${this.imgArray[0]}.${this.extension}`;
+    // setInterval(() => this.delante(), 4000)
 
-    this.currentSrc = `assets/${this.imgArray[0]}.${this.extension}`;
-    setInterval(() => this.delante(), 4000)
+    this.currentSrc = `assets/foto${this.inicio}.${this.extension}`;
   }
 
   constructor() { }

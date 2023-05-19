@@ -1,5 +1,4 @@
-import {AfterViewInit, Component, HostListener, ElementRef, ViewChild} from '@angular/core';
-import $ from 'jquery';
+import {Component, HostListener, ElementRef, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-donde-cuando',
@@ -14,17 +13,17 @@ export class DondeCuandoComponent {
     console.log('b', this.box.nativeElement.getBoundingClientRect().bottom);
     console.log('w',window.innerHeight);
     console.log('o',document.documentElement.clientHeight);
-    
-    
-    if(this.isInView()) {      
-      this.box.nativeElement.style.visibility = 'visible' 
-      this.box.nativeElement.style.animation = 'moveInRigth 1s ease-out ' 
+
+
+    if(this.isInView()) {
+      this.box.nativeElement.style.visibility = 'visible'
+      this.box.nativeElement.style.animation = 'moveInRigth 1s ease-out '
     }
     if(this.isNotInView()) {
-      this.box.nativeElement.style.animation = '' 
+      this.box.nativeElement.style.animation = ''
       this.box.nativeElement.style.visibility = 'hidden'
     }
-    
+
   }
   opcion = 0;
   constructor() { }

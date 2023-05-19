@@ -50,7 +50,7 @@ nav {
     left: 0;
     width: 100vw;
     // background-color: $color-fondo-menu;
-    background-image: url("https://i.pinimg.com/564x/35/71/71/35717131eef8a6f36ff4d92ffce0db46.jpg");
+    background-image: url("https://i.pinimg.com/564x/2b/9e/9b/2b9e9b67f7b88e503ce693dce1ae4848.jpg");
     height: 100vh;
     clip-path: circle(150% at 100% 100%) ;
     transition: clip-path 0.5s ease;
@@ -58,12 +58,12 @@ nav {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    transition: clip-path 1s;
     z-index: 20;
     span{
       //text-decoration: underline;
-      color: #1B264F;
-      text-shadow: 2px 2px #ffffff;
+      //color: #1B264F;
+      color: #ffffff;
+      //text-shadow: 2px 2px #ffffff;
     }
   }
   .menu2{
@@ -72,7 +72,7 @@ nav {
     left: 0;
     width: 100vw;
     // background-color: $color-fondo-menu;
-    background-image: url("https://i.pinimg.com/564x/35/71/71/35717131eef8a6f36ff4d92ffce0db46.jpg");
+    background-image: url("https://i.pinimg.com/564x/2b/9e/9b/2b9e9b67f7b88e503ce693dce1ae4848.jpg");
     height: 100vh;
     clip-path: circle(0% at 100% 100%) ;
     transition: clip-path 0.5s ease;
@@ -80,7 +80,6 @@ nav {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    transition: clip-path 1s;
     z-index: 20;
   }
 

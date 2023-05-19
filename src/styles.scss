@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  //height: 100vh;
   margin: 0;
   background-color: #ccc;
 }
@@ -18,7 +18,7 @@ body {
   width: 100%;
   height: 100%; /* Alto de un celular típico */
   overflow: auto;
-  overflow-y: scroll;
-  //overflow-y: hidden;
+  //overflow-y: scroll;
+  overflow-y: hidden;
 }
 

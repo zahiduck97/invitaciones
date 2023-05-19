@@ -1,8 +1,4 @@
-// section{
-//   text-align: center;
-//   background-color: rgba(56, 52, 52, 0.918);
-//   color: white;
-// }
+
 .site-footer
 {
   background-color:#26272b;
@@ -62,7 +58,7 @@
 }
 .site-footer .social-icons
 {
-  text-align:right
+  text-align:center;
 }
 .site-footer .social-icons a
 {
@@ -78,24 +74,7 @@
 {
   margin:0
 }
-@media (max-width:991px)
-{
-  // .site-footer [class^=col-]
-  // {
-  //   margin-bottom:30px
-  // }
-}
-@media (max-width:767px)
-{
-  // .site-footer
-  // {
-  //   padding-bottom:0
-  // }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
-}
+
 .social-icons
 {
   padding-left:0;
