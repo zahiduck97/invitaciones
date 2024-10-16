@@ -22,7 +22,19 @@ export class MiEventoComponent {
   @ViewChild("frase") frase: ElementRef;
   @ViewChild("fraseRegalo") fraseRegalo: ElementRef;
   token = this.route.snapshot.params['id'];
-  data;
+  data = {
+    alias: 'BODA DE ORO',
+    nombreInvitado: 'JUAN PÉREZ',
+    numeroBoletos: 2,
+    mesa: 10,
+    idEstadoInvitacion: 2,
+    escaneados: 0,
+    fechaEvento: '10-04-2024',
+    contacto1: 'Zahid Butron',
+    numero1: '5526935026',
+    contacto2: 'Aracely Juarez',
+    numero2: '5517802299',
+  };
   audio = new Audio('assets/song.mp3');
   reproduciendo = 0;
   mostrandoModal = 0
@@ -33,15 +45,15 @@ export class MiEventoComponent {
     private route: ActivatedRoute,
     private invitadosSevice: InvitadosService
   ) {
-    if (this.token) {
-      this.invitadosSevice.updateVisualizacion(this.token).subscribe(data => {
-        this.data = jwtDecode<JwtPayload>(data.data);
-        console.log(this.data);
-        if(this.route.snapshot.params['qr']) {
-          this.mostrandoModal = 1
-        }
-      });
-    }
+    // if (this.token) {
+    //   this.invitadosSevice.updateVisualizacion(this.token).subscribe(data => {
+    //     this.data = jwtDecode<JwtPayload>(data.data);
+    //     console.log(this.data);
+    //     if(this.route.snapshot.params['qr']) {
+    //       this.mostrandoModal = 1
+    //     }
+    //   });
+    // }
     this.audio.onended = () => {
       this.reproducir(0)
     };

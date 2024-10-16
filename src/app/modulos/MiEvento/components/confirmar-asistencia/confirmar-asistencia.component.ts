@@ -13,15 +13,15 @@ export class ConfirmarAsistenciaComponent implements OnInit {
   @ViewChild("cardsContainer") box: ElementRef;
   @HostListener("window:scroll", ['$event'])
   doSomethingOnWindowsScroll(){
-    if(this.isInView()) {      
-      this.box.nativeElement.style.visibility = 'visible' 
-      this.box.nativeElement.style.animation = 'moveInRigth 1s ease-out ' 
+    if(this.isInView()) {
+      this.box.nativeElement.style.visibility = 'visible'
+      this.box.nativeElement.style.animation = 'moveInRigth 1s ease-out '
     }
     if(this.isNotInView()) {
-      this.box.nativeElement.style.animation = '' 
+      this.box.nativeElement.style.animation = ''
       this.box.nativeElement.style.visibility = 'hidden'
     }
-    
+
   }
   constructor(private invitadosSevice: InvitadosService) {
    }
@@ -30,11 +30,11 @@ export class ConfirmarAsistenciaComponent implements OnInit {
 
   }
   asistencia(idEstadoInvitacion){
-    this.invitadosSevice.update(this.token, {idEstadoInvitacion}).subscribe({
-      next: () => {
-        this.estadoAsistencia.emit(idEstadoInvitacion);
-      },
-    });
+    // this.invitadosSevice.update(this.token, {idEstadoInvitacion}).subscribe({
+    //   next: () => {
+    //     this.estadoAsistencia.emit(idEstadoInvitacion);
+    //   },
+    // });
   }
   isInView(){
     const element = this.box.nativeElement.getBoundingClientRect()
