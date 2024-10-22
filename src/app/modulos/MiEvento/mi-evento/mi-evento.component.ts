@@ -29,7 +29,7 @@ export class MiEventoComponent {
     mesa: 10,
     idEstadoInvitacion: 2,
     escaneados: 0,
-    fechaEvento: '10-04-2024',
+    fechaEvento: '10-10-2025',
     contacto1: 'Zahid Butron',
     numero1: '5526935026',
     contacto2: 'Aracely Juarez',

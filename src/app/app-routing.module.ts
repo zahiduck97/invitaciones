@@ -5,7 +5,7 @@ import {MiEventoModule} from "./modulos/MiEvento/MiEvento.module";
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/admin',
+    redirectTo: '/miEvento',
     pathMatch: 'full'
   },
   {
