@@ -65,7 +65,7 @@ export class MiEventoComponent {
 
   cerrarModal() {
     this.modal = false;
-    this.reproducir(1);
+    // this.reproducir(1);
   }
 
   nuevoEstado(event) {
