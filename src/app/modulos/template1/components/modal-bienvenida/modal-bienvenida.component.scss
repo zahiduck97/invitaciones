@@ -1,0 +1,118 @@
+
+$btn-color:   #b98f48;
+.slide-container{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  padding: 1.8rem;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.509);
+  z-index: 101;
+  .blank{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  #text{
+    text-align: center;
+  }
+  #centrar{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    button {
+      margin: 20px;
+      color: #ffffff;
+      font-weight: 800;
+      background: #437764;
+      padding: 5px;
+      border-radius: 10px;
+      box-shadow:
+        inset 0 -3em 3em rgba(0,0,0,0.1),
+        0 0  0 2px rgb(255,255,255),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-container{
+    iframe {
+      height: 460px;
+      width: 100%;
+    }
+
+  }
+
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+$border-radius-size: 14px;
+$barbarian: #EC9B3B;
+$archer: #EE5487;
+$giant: #F6901A;
+$goblin: #82BB30;
+$wizard: #4FACFF;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+
+  background-size: cover;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  color: #9E9E9E;
+  margin-top: 30px;
+}
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+
+
+.clash-card {
+  background: white;
+  width: 300px;
+  margin: auto;
+  border-radius: $border-radius-size + 5;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+
+.clash-card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: $border-radius-size;
+  border-top-right-radius: $border-radius-size;
+}
+
+.clash-card__imagen {
+  background: url('https://i.pinimg.com/564x/8c/a2/2d/8ca22d4d723cffcdcdfed8747a149735.jpg');
+  img {
+    //width: 410px;
+    //position: absolute;
+    //top: -115px;
+    //left: -63px;
+    width: 440px;
+    position: absolute;
+    top: -134px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

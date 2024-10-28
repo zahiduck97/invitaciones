@@ -1,8 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {NgxQrcodeElementTypes, NgxQrcodeErrorCorrectionLevels} from "@techiediaries/ngx-qrcode";
-import {ActivatedRoute} from "@angular/router";
-import jwtDecode, {JwtPayload} from "jwt-decode";
-import {InvitadosService} from "../../../../services/invitados.service";
 
 @Component({
   selector: 'app-qr',
@@ -12,14 +9,10 @@ import {InvitadosService} from "../../../../services/invitados.service";
 
 export class QrComponent implements OnInit {
   @Input() token
-  elementType = NgxQrcodeElementTypes.URL;
-  correctionLevel = NgxQrcodeErrorCorrectionLevels.HIGH;
-  value;
-  data;
-
+  errorCorrectionLevel = NgxQrcodeErrorCorrectionLevels.LOW;
+  elementType = NgxQrcodeElementTypes.URL
+  value = 'Techiediaries';
   constructor(
-    private route: ActivatedRoute,
-    private invitadosSevice: InvitadosService,
   ) { }
 
   ngOnInit(): void {
@@ -29,6 +22,5 @@ export class QrComponent implements OnInit {
     //     this.value = `http://invitaciones-test.s3-website-us-east-1.amazonaws.com/#/misxv1/${this.token}/1`
     //   });
     // }
-    this.value = `http://invitaciones-test.s3-website-us-east-1.amazonaws.com/#/misxv1/test/1`
   }
 }

@@ -17,10 +17,10 @@ import { PublicidadComponent } from './components/publicidad/publicidad.componen
 import { ModalComponent } from './components/modal/modal.component';
 import { QrComponent } from './components/qr/qr.component';
 import {ZXingScannerModule} from "@zxing/ngx-scanner";
-import {NgxQRCodeModule} from "@techiediaries/ngx-qrcode";
 import {FormsModule} from "@angular/forms";
 import { Modal2Component } from './components/modal2/modal2.component';
-import {NgxScannerQrcodeModule} from "ngx-scanner-qrcode";
+import { ModalBienvenidaComponent } from './components/modal-bienvenida/modal-bienvenida.component';
+import {NgxQRCodeModule} from "@techiediaries/ngx-qrcode";
 
 @NgModule({
 
@@ -41,15 +41,15 @@ import {NgxScannerQrcodeModule} from "ngx-scanner-qrcode";
         PublicidadComponent,
         ModalComponent,
         QrComponent,
-        Modal2Component
+        Modal2Component,
+        ModalBienvenidaComponent
   ],
   imports: [
     CommonModule,
     Template1RoutingModule,
     ZXingScannerModule,
-    NgxQRCodeModule,
     FormsModule,
-    NgxScannerQrcodeModule,
+    NgxQRCodeModule
   ],
 })
 export class Template1Module { }

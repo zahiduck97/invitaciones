@@ -36,6 +36,7 @@ export class Misxv1Component {
   audio = new Audio('assets/song.mp3');
   reproduciendo = 0;
   mostrandoModal = 0
+  modal= true;
 
 // si quieres vovler a abrir el modal luego de cerrarlo, refresca la pantalla
   constructor(
@@ -72,5 +73,10 @@ export class Misxv1Component {
 
   mostrarModal(valor) {
     this.mostrandoModal = valor;
+  }
+
+  cerrarModal() {
+    this.modal = false;
+    this.reproducir(1);
   }
 }
