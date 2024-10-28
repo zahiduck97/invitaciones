@@ -55,7 +55,7 @@ export class Misxv1Component {
     this.audio.onended = () => {
       this.reproducir(0)
     };
-    this.reproducir(1);
+    // this.reproducir(1);
   }
 
   opcion(opcion) {
