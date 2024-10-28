@@ -23,11 +23,12 @@ export class QrComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    if( this.token) {
-      this.invitadosSevice.updateVisualizacion(this.token).subscribe(data => {
-        this.data = jwtDecode<JwtPayload>(data.data);
-        this.value = `http://invitaciones-test.s3-website-us-east-1.amazonaws.com/#/misxv1/${this.token}/1`
-      });
-    }
+    // if( this.token) {
+    //   this.invitadosSevice.updateVisualizacion(this.token).subscribe(data => {
+    //     this.data = jwtDecode<JwtPayload>(data.data);
+    //     this.value = `http://invitaciones-test.s3-website-us-east-1.amazonaws.com/#/misxv1/${this.token}/1`
+    //   });
+    // }
+    this.value = `http://invitaciones-test.s3-website-us-east-1.amazonaws.com/#/misxv1/test/1`
   }
 }
