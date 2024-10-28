@@ -21,6 +21,7 @@ import {NgxQRCodeModule} from "@techiediaries/ngx-qrcode";
 import {FormsModule} from "@angular/forms";
 import { Modal2Component } from './components/modal2/modal2.component';
 import {NgxScannerQrcodeModule} from "ngx-scanner-qrcode";
+import { ModalBienvenidaComponent } from './components/modal-bienvenida/modal-bienvenida.component';
 
 @NgModule({
 
@@ -41,7 +42,8 @@ import {NgxScannerQrcodeModule} from "ngx-scanner-qrcode";
         PublicidadComponent,
         ModalComponent,
         QrComponent,
-        Modal2Component
+        Modal2Component,
+        ModalBienvenidaComponent
   ],
   imports: [
     CommonModule,

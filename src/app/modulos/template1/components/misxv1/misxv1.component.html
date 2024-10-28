@@ -1,4 +1,6 @@
 <div *ngIf="data">
+  <app-modal-bienvenida *ngIf="modal" (modal)="cerrarModal()"></app-modal-bienvenida>
+
   <!------- Reproductor de Audio: Inicio -------------->
   <div class="audio">
     <i *ngIf="!reproduciendo; else pausa" (click)="reproducir(1)" class="fa-solid fa-volume-high"></i>
