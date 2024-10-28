@@ -24,7 +24,7 @@ export class MiEventoComponent {
   token = this.route.snapshot.params['id'];
   data = {
     alias: 'MIS 4 AÑOS ',
-    fechaEvento: '10-04-2024',
+    fechaEvento: '10-04-2025',
     contacto1: 'Zahid Butron',
     numero1: '5526935026',
     contacto2: 'Aracely Juarez',
@@ -60,7 +60,7 @@ export class MiEventoComponent {
 
   cerrarModal() {
     this.modal = false;
-    this.reproducir(1);
+    // this.reproducir(1);
   }
 
   nuevoEstado(event) {
